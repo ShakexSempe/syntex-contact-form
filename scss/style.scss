@@ -17,7 +17,7 @@ body {
     padding: 0 5vw;
     position: relative;
 
-    #header {
+    #nav {
         z-index: 10;
         position: sticky;
         top: 0;
@@ -129,13 +129,33 @@ body {
         // end of nav-list mobile first**
     }
 
+    header {
+        text-align: center;
+        margin: 1em auto;
+    }
+
     form {
         border: 1px solid #000;
         margin: 5vh 0;
-        padding: 1em;
+        padding: .2em;
 
-        .form-title {
-            text-align: center;
+        .input-div {
+            display: flex;
+            flex-direction: column;
+            // border: 2px solid red;
+            margin: .5em 0;
+            padding: .5em .1em;
+
+            label {
+                // border: 1px solid green;
+                margin-bottom: .5em;
+                text-transform: capitalize;
+            }
+
+            input {
+                // border: 2px dashed blue;
+                padding: .5em;
+            }
         }
     }
 
