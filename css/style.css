@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Open+Sans:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +6,19 @@
 
 body {
   width: 100vw;
+  min-height: 100vh;
   font-size: 16px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif; }
 
 #container {
   width: 100%;
   overflow-x: hidden;
-  padding: 0 5vw;
+  padding: 0 .5em;
   position: relative; }
+  @media (min-width: 768px) {
+    #container {
+      padding: 0 5vw; } }
   #container #nav {
     z-index: 10;
     position: sticky;
@@ -28,7 +34,8 @@ body {
       font-size: .9em;
       text-decoration: none;
       color: #000;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      cursor: pointer; }
     #container #nav .nav-toggle {
       border: 1px solid #000;
       padding: .5em;
@@ -56,14 +63,15 @@ body {
     #container #nav .nav-list {
       list-style: none;
       border: none;
-      background-color: #fff000;
+      background-color: #161616;
       color: #f4f4f4;
       width: 100%;
+      min-height: 100vh;
       position: absolute;
       right: -110%;
       top: 5vh;
       transition: .5s;
-      z-index: -1; }
+      padding: 1em .5em; }
       #container #nav .nav-list li {
         margin-bottom: 1em; }
         #container #nav .nav-list li a {
@@ -79,19 +87,27 @@ body {
           background-color: #ddd;
           right: 0;
           top: 0;
-          padding: 0; }
+          padding: 0;
+          min-height: auto; }
           #container #nav .nav-list li {
-            margin: 0 1em;
-            cursor: pointer; }
+            margin: 0 1em; }
             #container #nav .nav-list li a {
-              color: #000; } }
+              color: #000;
+              cursor: pointer;
+              display: block; }
+            #container #nav .nav-list li:hover a {
+              color: #000a; } }
   #container header {
     text-align: center;
     margin: 1em auto; }
   #container form {
-    border: 1px solid #000;
     margin: 5vh 0;
     padding: .2em; }
+    @media (min-width: 768px) {
+      #container form {
+        width: 80%;
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        margin: 5vh auto; } }
     #container form .input-div {
       display: flex;
       flex-direction: column;
@@ -108,4 +124,5 @@ body {
     background-color: #ddd;
     text-align: center;
     position: sticky;
-    bottom: .5em; }
+    bottom: .5em;
+    text-transform: capitalize; }

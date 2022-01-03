@@ -7,14 +7,19 @@
 
 body {
     width: 100vw;
+    min-height: 100vh;
     font-size: 16px;
     overflow-x: hidden;
+    font-family: $font-sans;
 }
 
 #container {
+    @media (min-width: 768px){
+        padding: 0 5vw;
+    }
     width: 100%;
     overflow-x: hidden;
-    padding: 0 5vw;
+    padding: 0 .5em;
     position: relative;
 
     #nav {
@@ -36,6 +41,7 @@ body {
                     text-decoration: none;
                     color: #000;
                     text-transform: capitalize;
+                    cursor: pointer;
                 }
             }
         }
@@ -79,14 +85,15 @@ body {
         .nav-list {
             list-style: none;
             border: none;
-            background-color: #fff000;
+            background-color: #161616;
             color: #f4f4f4;
             width: 100%;
+            min-height: 100vh;
             position: absolute;
             right: -110%;
             top: 5vh;
             transition: .5s;
-            z-index: -1;
+            padding: 1em .5em;
 
             li {
                 margin-bottom: 1em;
@@ -107,18 +114,23 @@ body {
             @media (min-width: 768px) {
                 position: relative;
                 display: flex;
-
                 background-color: #ddd;
                 right: 0;
                 top: 0;
                 padding: 0;
+            min-height: auto;
 
                 li {
                     margin: 0 1em;
-                    cursor: pointer;
-
                     a {
                         color: #000;
+                        cursor: pointer;
+                        display: block;
+                    }
+                    &:hover {
+                        a {
+                            color: #000a;
+                        }
                     }
                 }
             }
@@ -135,7 +147,12 @@ body {
     }
 
     form {
-        border: 1px solid #000;
+        @media (min-width: 768px) {
+            width: 80%;
+            border: 1px solid rgba(0, 0, 0, 0.151);
+            margin: 5vh auto;
+        }
+        // border: 1px solid #000;
         margin: 5vh 0;
         padding: .2em;
 
@@ -166,5 +183,6 @@ body {
         text-align: center;
         position: sticky;
         bottom: .5em;
+        text-transform: capitalize;
     }
 }
