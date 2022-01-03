@@ -134,11 +134,10 @@ body {
         text-transform: capitalize; }
       #container form .input-div:hover label {
         transform: translateY(0) translateX(0.5em); }
-  #container footer {
-    width: 100%;
-    padding: .5em 5vw;
-    background-color: #ddd;
-    text-align: center;
-    position: sticky;
-    bottom: .5em;
-    text-transform: capitalize; }
+
+footer {
+  width: 100%;
+  padding: .5em 5vw;
+  background-color: #ddd;
+  text-align: center;
+  text-transform: capitalize; }
