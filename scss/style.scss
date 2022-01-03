@@ -12,134 +12,136 @@ body {
     overflow-x: hidden;
     font-family: $font-sans;
 }
+#nav {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 1em 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    .brand {
+        h1 {
+            a {
+                font-size: .9em;
+                text-decoration: none;
+                color: #000;
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // hamburger display
+    .nav-toggle {
+        border: 1px solid #000;
+        padding: .5em;
+        border-radius: 50%;
+        position: absolute;
+        right: .5em;
+        width: 1.5em;
+        height: 1.5em;
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        transition: .3s ease;
+
+        .bar {
+            position: absolute;
+            width: 70%;
+            height: 2px;
+            background-color: #000;
+        }
+
+        &:hover {
+            transform: scale(.95);
+        }
+
+        &:active {
+            transform: scale(.9);
+        }
+
+        // desktop: hide hamburger
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    // nav-list mobile first**
+    .nav-list {
+        list-style: none;
+        border: none;
+        background-color: #161616;
+        color: #f4f4f4;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        right: -110%;
+        top: 5vh;
+        transition: .5s;
+        padding: 1em .5em;
+
+        li {
+            margin-bottom: 1em;
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                color: #f4f4f4;
+            }
+        }
+
+        // active menu
+        &.active {
+            right: 0;
+        }
+
+        // desktop nav-list
+        @media (min-width: 768px) {
+            position: relative;
+            display: flex;
+            background-color: #000;
+            right: 0;
+            top: 0;
+            padding: 0;
+        min-height: auto;
+
+            li {
+                margin: 0 .5em 0 2em;
+                a {
+                    color: #f4f4f4;
+                    cursor: pointer;
+                    display: block;
+                }
+                &:hover {
+                    a {
+                        color: #fffa;
+                    }
+                }
+            }
+        }
+
+        // end of desktop nav-list
+    }
+
+    // end of nav-list mobile first**
+}
 #container {
     @media (min-width: 768px){
         padding: 0 5vw;
     }
+    margin: 5vh 0;
     width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
     padding: 0 .5em;
     position: relative;
 
-    #nav {
-        z-index: 10;
-        position: sticky;
-        top: 0;
-        height: 5vh;
-        background-color: #eee;
-        width: 100%;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .brand {
-            h1 {
-                a {
-                    font-size: .9em;
-                    text-decoration: none;
-                    color: #000;
-                    text-transform: capitalize;
-                    cursor: pointer;
-                }
-            }
-        }
-
-        // hamburger display
-        .nav-toggle {
-            border: 1px solid #000;
-            padding: .5em;
-            border-radius: 50%;
-            position: absolute;
-            right: 0;
-            width: 1.5em;
-            height: 1.5em;
-            cursor: pointer;
-            display: grid;
-            place-items: center;
-            transition: .3s ease;
-
-            .bar {
-                position: absolute;
-                width: 70%;
-                height: 2px;
-                background-color: #000;
-            }
-
-            &:hover {
-                transform: scale(.95);
-            }
-
-            &:active {
-                transform: scale(.9);
-            }
-
-            // desktop: hide hamburger
-            @media (min-width: 768px) {
-                display: none;
-            }
-        }
-
-        // nav-list mobile first**
-        .nav-list {
-            list-style: none;
-            border: none;
-            background-color: #161616;
-            color: #f4f4f4;
-            width: 100%;
-            min-height: 100vh;
-            position: absolute;
-            right: -110%;
-            top: 5vh;
-            transition: .5s;
-            padding: 1em .5em;
-
-            li {
-                margin-bottom: 1em;
-
-                a {
-                    text-decoration: none;
-                    text-transform: capitalize;
-                    color: #f4f4f4;
-                }
-            }
-
-            // active menu
-            &.active {
-                right: 0;
-            }
-
-            // desktop nav-list
-            @media (min-width: 768px) {
-                position: relative;
-                display: flex;
-                background-color: #ddd;
-                right: 0;
-                top: 0;
-                padding: 0;
-            min-height: auto;
-
-                li {
-                    margin: 0 1em;
-                    a {
-                        color: #000;
-                        cursor: pointer;
-                        display: block;
-                    }
-                    &:hover {
-                        a {
-                            color: #000a;
-                        }
-                    }
-                }
-            }
-
-            // end of desktop nav-list
-        }
-
-        // end of nav-list mobile first**
-    }
+    
 
     header {
         text-align: center;
@@ -148,8 +150,7 @@ body {
 
     form {
         @media (min-width: 768px) {
-            width: 80%;
-            border: 1px solid rgba(0, 0, 0, 0.151);
+            width: 90%;
             margin: 5vh auto;
         }
         // border: 1px solid #000;
@@ -160,18 +161,36 @@ body {
             display: flex;
             flex-direction: column;
             // border: 2px solid red;
-            margin: .5em 0;
+            margin: .5em 0 1.5em;
             padding: .5em .1em;
+            transition: .3s ease;
+            position: relative;
 
             label {
                 // border: 1px solid green;
-                margin-bottom: .5em;
+                transform: translateY(-.5em);
                 text-transform: capitalize;
+                transition: .2s;
             }
 
             input {
                 // border: 2px dashed blue;
                 padding: .5em;
+            }
+
+            textarea {
+                padding: .5em;
+            }
+
+            ::placeholder {
+                text-transform: capitalize;
+            }
+
+            // input hover state
+            &:hover {
+                label {
+                    transform: translateY(0) translateX(.5em);
+                }
             }
         }
     }
