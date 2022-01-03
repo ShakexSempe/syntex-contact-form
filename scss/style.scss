@@ -73,7 +73,6 @@ body {
 
     // nav-list mobile first**
     .nav-list {
-        list-style: none;
         border: none;
         background-color: #161616;
         color: #f4f4f4;
@@ -84,17 +83,20 @@ body {
         top: 5vh;
         transition: .5s;
         padding: 1em .5em;
+        display: grid;
+        place-items: center;
+        ul {
+            list-style: none;
+            li {
+                margin-bottom: 1em;
 
-        li {
-            margin-bottom: 1em;
-
-            a {
-                text-decoration: none;
-                text-transform: capitalize;
-                color: #f4f4f4;
+                a {
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: #f4f4f4;
+                }
             }
         }
-
         // active menu
         &.active {
             right: 0;
@@ -108,8 +110,10 @@ body {
             right: 0;
             top: 0;
             padding: 0;
-        min-height: auto;
+            min-height: auto;
 
+        ul {
+            display: flex;
             li {
                 margin: 0 .5em 0 2em;
                 a {
@@ -123,6 +127,7 @@ body {
                     }
                 }
             }
+        }
         }
 
         // end of desktop nav-list
@@ -179,7 +184,7 @@ body {
             }
 
             textarea {
-                padding: .5em;
+                padding: .5emb;
             }
 
             ::placeholder {

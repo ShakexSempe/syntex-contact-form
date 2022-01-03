@@ -53,7 +53,6 @@ body {
       #nav .nav-toggle {
         display: none; } }
   #nav .nav-list {
-    list-style: none;
     border: none;
     background-color: #161616;
     color: #f4f4f4;
@@ -63,13 +62,17 @@ body {
     right: -110%;
     top: 5vh;
     transition: .5s;
-    padding: 1em .5em; }
-    #nav .nav-list li {
-      margin-bottom: 1em; }
-      #nav .nav-list li a {
-        text-decoration: none;
-        text-transform: capitalize;
-        color: #f4f4f4; }
+    padding: 1em .5em;
+    display: grid;
+    place-items: center; }
+    #nav .nav-list ul {
+      list-style: none; }
+      #nav .nav-list ul li {
+        margin-bottom: 1em; }
+        #nav .nav-list ul li a {
+          text-decoration: none;
+          text-transform: capitalize;
+          color: #f4f4f4; }
     #nav .nav-list.active {
       right: 0; }
     @media (min-width: 768px) {
@@ -81,14 +84,16 @@ body {
         top: 0;
         padding: 0;
         min-height: auto; }
-        #nav .nav-list li {
-          margin: 0 .5em 0 2em; }
-          #nav .nav-list li a {
-            color: #f4f4f4;
-            cursor: pointer;
-            display: block; }
-          #nav .nav-list li:hover a {
-            color: #fffa; } }
+        #nav .nav-list ul {
+          display: flex; }
+          #nav .nav-list ul li {
+            margin: 0 .5em 0 2em; }
+            #nav .nav-list ul li a {
+              color: #f4f4f4;
+              cursor: pointer;
+              display: block; }
+            #nav .nav-list ul li:hover a {
+              color: #fffa; } }
 
 #container {
   margin: 5vh 0;
@@ -124,7 +129,7 @@ body {
       #container form .input-div input {
         padding: .5em; }
       #container form .input-div textarea {
-        padding: .5em; }
+        padding: .5emb; }
       #container form .input-div ::placeholder {
         text-transform: capitalize; }
       #container form .input-div:hover label {
