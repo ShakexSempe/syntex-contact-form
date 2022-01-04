@@ -11,9 +11,9 @@ toggle.addEventListener("click", () => {
 });
 console.log(toggle)
 // fieldset active
-const field = document.querySelectorAll('.field');
-field.forEach(field => {
-    field.addEventListener("click", () => {
-        field.classList.toggle("open");
-    })
-})
+// const field = document.querySelectorAll('.field');
+// field.forEach(field => {
+//     field.addEventListener("click", () => {
+//         field.classList.toggle("open");
+//     })
+// })

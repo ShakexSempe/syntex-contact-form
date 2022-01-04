@@ -10,8 +10,8 @@ form {
     margin: 5vh auto;
     background-color: #ddd;
     padding: 1.3em .2em;
-    overflow-y: scroll;
-    height: 70vh;
+    overflow-y: auto;
+    height: auto;
     transition: 1s ease;
     border-radius: 3px;
     position: relative; }
