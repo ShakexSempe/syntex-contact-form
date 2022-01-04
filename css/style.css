@@ -1,4 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Open+Sans:wght@300;400;500;700&display=swap");
+form {
+  margin: 5vh auto;
+  padding: .2em; }
+  @media (min-width: 768px) {
+    form {
+      width: 90%;
+      margin: 5vh auto; } }
+  form fieldset {
+    border: 1px solid red;
+    padding: .5em .2em;
+    overflow-y: auto;
+    height: 0vh;
+    transition: 1s ease; }
+    form fieldset:hover {
+      height: 70vh; }
+    form fieldset legend {
+      margin: 0 1em; }
+    form fieldset .input-div {
+      width: 80%; }
+      form fieldset .input-div input {
+        margin: 1em 0; }
+  form .input-div {
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0 1.5em;
+    padding: .5em .1em;
+    transition: .3s ease;
+    position: relative; }
+    form .input-div label {
+      transform: translateY(-0.5em);
+      text-transform: capitalize;
+      transition: .2s;
+      font-weight: 600; }
+    form .input-div input {
+      padding: .5em; }
+    form .input-div textarea {
+      padding: .5em; }
+    form .input-div ::placeholder {
+      text-transform: capitalize; }
+    form .input-div:hover label {
+      transform: translateY(0) translateX(0.5em); }
+  form button {
+    display: block;
+    width: 100%;
+    margin: 5vh auto;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .05em;
+    border: none;
+    outline: none;
+    position: relative;
+    isolation: isolate;
+    transition: .3s ease; }
+    form button::before, form button::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      transition: .2s ease; }
+    form button::before {
+      box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a; }
+    form button::after {
+      opacity: 0;
+      box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #fffa; }
+    form button:hover {
+      transform: scale(0.98);
+      letter-spacing: 0; }
+      form button:hover::before {
+        opacity: 0; }
+      form button:hover::after {
+        opacity: 1; }
+
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +164,8 @@ body {
         background-color: #000;
         right: 0;
         top: 0;
-        padding: 0;
+        padding: .3em 0;
+        border-radius: 5px;
         min-height: auto; }
         #nav .nav-list ul {
           display: flex; }
@@ -108,72 +191,6 @@ body {
   #container header {
     text-align: center;
     margin: 1em auto; }
-  #container form {
-    margin: 5vh auto;
-    padding: .2em; }
-    @media (min-width: 768px) {
-      #container form {
-        width: 90%;
-        margin: 5vh auto; } }
-    #container form .input-div {
-      display: flex;
-      flex-direction: column;
-      margin: .5em 0 1.5em;
-      padding: .5em .1em;
-      transition: .3s ease;
-      position: relative; }
-      #container form .input-div label {
-        transform: translateY(-0.5em);
-        text-transform: capitalize;
-        transition: .2s; }
-      #container form .input-div input {
-        padding: .5em; }
-      #container form .input-div textarea {
-        padding: .5emb; }
-      #container form .input-div ::placeholder {
-        text-transform: capitalize; }
-      #container form .input-div:hover label {
-        transform: translateY(0) translateX(0.5em); }
-    #container form button {
-      display: block;
-      width: 100%;
-      margin: 5vh auto;
-      padding: 1em;
-      cursor: pointer;
-      border-radius: 10px;
-      text-transform: uppercase;
-      font-size: 1em;
-      font-weight: 600;
-      letter-spacing: .05em;
-      border: none;
-      outline: none;
-      position: relative;
-      isolation: isolate;
-      transition: .3s ease; }
-      #container form button::before, #container form button::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        border-radius: 10px;
-        border: none;
-        outline: none;
-        transition: .2s ease; }
-      #container form button::before {
-        box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a; }
-      #container form button::after {
-        opacity: 0;
-        box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #fffa; }
-      #container form button:hover {
-        transform: scale(0.98);
-        letter-spacing: 0; }
-        #container form button:hover::before {
-          opacity: 0; }
-        #container form button:hover::after {
-          opacity: 1; }
 
 footer {
   width: 100%;
