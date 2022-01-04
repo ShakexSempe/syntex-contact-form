@@ -7,23 +7,56 @@ form {
       width: 90%;
       margin: 5vh auto; } }
   form fieldset {
-    background-color: rgba(201, 192, 255, 0.384);
-    padding: 1em .2em;
+    margin: 5vh auto;
+    background-color: #ddd;
+    padding: 1.3em .2em;
     overflow-y: auto;
     height: 0vh;
-    transition: 1s ease; }
+    transition: 1s ease;
+    border-radius: 3px;
+    position: relative; }
     form fieldset.open {
       height: 70vh; }
+    form fieldset .field-btn {
+      position: absolute;
+      right: .5em;
+      top: 0;
+      display: block;
+      width: 3em;
+      padding: .8em 2em;
+      border-radius: 15px;
+      border: 1px solid green; }
+      form fieldset .field-btn::after, form fieldset .field-btn::before {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
+      form fieldset .field-btn::before {
+        content: 'open'; }
+      form fieldset .field-btn::after {
+        content: 'close';
+        opacity: 0; }
+      form fieldset .field-btn.active::before {
+        opacity: 0; }
+      form fieldset .field-btn.active::after {
+        opacity: 1; }
     form fieldset:hover {
       height: 70vh; }
     form fieldset legend {
-      margin: 0 1em; }
+      margin: 0 1em;
+      font-size: 1.1em;
+      text-transform: capitalize; }
     form fieldset .input-div {
-      width: 80%; }
+      width: 100%; }
       form fieldset .input-div label {
         margin-top: .5em; }
       form fieldset .input-div input {
-        margin: 1em 0; }
+        text-overflow: ellipsis;
+        margin: .1em 0; }
   form .input-div {
     display: flex;
     flex-direction: column;
@@ -52,13 +85,13 @@ form {
     form .input-div textarea {
       padding: .5em; }
       form .input-div textarea:invalid {
-        background-color: rgba(201, 192, 255, 0.384); }
+        background-color: #ddd; }
     form .input-div ::placeholder {
       text-transform: capitalize;
       color: #a3a3a3; }
     form .input-div:hover label {
       transform: translateY(0) translateX(0.5em); }
-  form button {
+  form #submit-btn {
     display: block;
     width: 100%;
     margin: 5vh auto;
@@ -76,7 +109,7 @@ form {
     background-color: #000;
     color: #ead2a1;
     transition: .3s ease; }
-    form button::before, form button::after {
+    form #submit-btn::before, form #submit-btn::after {
       position: absolute;
       content: '';
       top: 0;
@@ -88,17 +121,17 @@ form {
       border: none;
       outline: none;
       transition: .2s ease; }
-    form button::before {
+    form #submit-btn::before {
       box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a; }
-    form button::after {
+    form #submit-btn::after {
       opacity: 0;
       box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #fffa; }
-    form button:hover {
+    form #submit-btn:hover {
       transform: scale(0.98);
       letter-spacing: 0; }
-      form button:hover::before {
+      form #submit-btn:hover::before {
         opacity: 0; }
-      form button:hover::after {
+      form #submit-btn:hover::after {
         opacity: 1; }
 
 * {
@@ -212,11 +245,11 @@ body {
           #nav .nav-list ul li {
             margin: 0 .5em 0 2em; }
             #nav .nav-list ul li a {
-              color: #f4f4f4;
+              color: #ead2a1;
               cursor: pointer;
               display: block; }
             #nav .nav-list ul li:hover a {
-              color: #fffa; } }
+              color: #f4f4f4; } }
 
 #container {
   margin: 5vh 0;

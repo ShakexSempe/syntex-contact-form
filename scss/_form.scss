@@ -8,30 +8,71 @@ form {
     padding: .2em;
 
     fieldset {
+        margin: 5vh auto;
         background-color: $invalid;
-        padding: 1em .2em;
+        padding: 1.3em .2em;
         overflow-y: auto;
         height: 0vh;
         transition: 1s ease;
+        border-radius: 3px;
+        position: relative;
         // active class
         &.open {
             height: 70vh;
         }
         // end of active class
+        // button
+        .field-btn {
+            position: absolute;
+            right: .5em;
+            top:0;
+            display: block;
+            width: 3em;
+            padding: .8em 2em;
+            border-radius: 15px;
+            border: 1px solid green;
+            &::after, &::before {
+                position: absolute;
+                display: grid;
+                place-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+            &::before {
+                content: 'open';
+            }
+            &::after {
+                content: 'close';
+                opacity: 0;
+            }
+
+            // button active
+            &.active {
+                &::before {opacity: 0;}
+                &::after {opacity: 1;}
+            }
+        }
+        // end of button
         &:hover {
             height: 70vh;
         }
         legend {
             margin: 0 1em;
+            font-size: 1.1em;
+            text-transform: capitalize;
         }
 
         .input-div {
-            width: 80%;
+            width: 100%;
             label {
                 margin-top: .5em;
             }
             input {
-                margin: 1em 0;
+                text-overflow: ellipsis;
+                margin: .1em 0;
             }
         }
     }
@@ -94,7 +135,7 @@ form {
     }
 
     // submit button       
-    button {
+    #submit-btn {
         display: block;
         width: 100%;
         margin: 5vh auto;

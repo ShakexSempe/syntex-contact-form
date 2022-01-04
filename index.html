@@ -30,33 +30,45 @@
         <h1>Let's work</h1>
     </header>
     <form action="">
-        <div class="input-div">
-            <label for="first-name">first Name: </label>
-            <input type="text" name="first-name" id="first-name"
-            placeholder="your first name"
-            minlength="2"
-            required>
-        </div>
-        <div class="input-div">
-            <label for="email">email address </label>
-            <input type="email" name="email" id="email"
-            placeholder="your email address"
-            required>
-        </div>
-        <div class="input-div">
-            <label for="name">business Name: </label>
-            <input type="text" name="name" id="name"
-            placeholder="your business listing">
-        </div>
+        <fieldset class="field service-items">
+            <legend>basic info</legend>
+            <!-- <div class="field-btn"></div> -->
+            <div class="input-div">
+                <label for="first-name">first Name: </label>
+                <input type="text" name="first-name" id="first-name"
+                placeholder="your first name"
+                minlength="2"
+                required>
+            </div>
+            <div class="input-div">
+                <label for="tel">phone number </label>
+                <input type="tel" name="tel" id="tel"
+                placeholder="your phone number"
+                min="10"
+                required>
+            </div>
+            <div class="input-div">
+                <label for="email">email address </label>
+                <input type="email" name="email" id="email"
+                placeholder="your email address"
+                required>
+            </div>
+            <div class="input-div">
+                <label for="name">business Name: </label>
+                <input type="text" name="name" id="name"
+                placeholder="your business listing">
+            </div>
+        </fieldset>
+     
+        <fieldset class="field service-items">
+        <legend>Webpage info</legend>
+        <!-- <div class="field-btn"></div> -->
         <div class="input-div">
             <label for="name">Website Title: </label>
             <input type="text" name="name" id="name"
-            placeholder="the name you want as the title of the website"
+            placeholder="title of the website"
             required>
         </div>
-
-        <fieldset class="field service-items">
-        <legend>services you provide</legend>
         <div class="input-div">
             <label for="services">services: </label>
             <input type="text" name="services" id="services" placeholder="service 1">
@@ -72,7 +84,7 @@
             <textarea name="about" col="10" rows="10" minlength="5" required></textarea>
         </div>
 
-        <button type="submit">submit form</button>
+        <button id="submit-btn" type="submit">submit form</button>
     </form>
 
 </div>

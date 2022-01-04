@@ -144,13 +144,13 @@ body {
             li {
                 margin: 0 .5em 0 2em;
                 a {
-                    color: #f4f4f4;
+                    color: $text-brand;
                     cursor: pointer;
                     display: block;
                 }
                 &:hover {
                     a {
-                        color: #fffa;
+                        color: $text-light;
                     }
                 }
             }
