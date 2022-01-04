@@ -18,7 +18,7 @@ body {
     position: fixed;
     top: 0;
     height: 5vh;
-    background-color: #000;
+    background-color: $background;
     width: 100%;
     padding: 1.5em 5vw;
     display: flex;
@@ -150,7 +150,7 @@ body {
                 }
                 &:hover {
                     a {
-                        color: $text-light;
+                        color: $text-brand-hover;
                     }
                 }
             }

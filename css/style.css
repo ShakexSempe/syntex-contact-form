@@ -8,7 +8,7 @@ form {
       margin: 5vh auto; } }
   form fieldset {
     margin: 5vh auto;
-    background-color: #ddd;
+    background-color: #f4f4f4;
     padding: 1.3em .2em;
     overflow-y: auto;
     height: auto;
@@ -16,8 +16,7 @@ form {
     border-radius: 3px;
     position: relative; }
     form fieldset.open {
-      height: 70vh;
-      background: #fff; }
+      background: #fff000; }
     form fieldset .field-btn {
       position: absolute;
       right: .5em;
@@ -56,6 +55,8 @@ form {
       form fieldset .input-div input {
         text-overflow: ellipsis;
         margin: .1em 0; }
+    form fieldset:hover {
+      background-color: #fff; }
   form .input-div {
     display: flex;
     flex-direction: column;
@@ -69,25 +70,35 @@ form {
       transition: .2s;
       font-weight: 600; }
     form .input-div input {
-      border: 1px solid #000;
+      outline: 2px solid #ead2a1;
+      outline-offset: -3px;
       padding: 1em .5em;
       transition: .5s ease;
-      background-color: #000;
+      background-color: #161616;
       color: #ead2a1;
-      border-radius: 5px; }
+      border-radius: 5px;
+      border: none; }
       form .input-div input:focus {
-        color: #fff;
-        background-color: #000;
-        letter-spacing: .2em; }
+        color: #ead2a1;
+        background-color: #333;
+        border: none;
+        letter-spacing: .2em;
+        outline: 2px solid #ead2a1;
+        outline-offset: -3px; }
       form .input-div input:invalid {
-        background-color: #333; }
+        background-color: #333a;
+        border: none;
+        outline: 2px dashed #ead2a1;
+        outline-offset: -2px; }
     form .input-div textarea {
       padding: .5em; }
       form .input-div textarea:invalid {
-        background-color: #ddd; }
+        background-color: #f4f4f4; }
     form .input-div ::placeholder {
       text-transform: capitalize;
       color: #a3a3a3; }
+    form .input-div.services input {
+      margin: .5em 0; }
     form .input-div:hover label {
       transform: translateY(0) translateX(0.5em); }
   form #submit-btn {
@@ -150,7 +161,7 @@ body {
   position: fixed;
   top: 0;
   height: 5vh;
-  background-color: #000;
+  background-color: #161616;
   width: 100%;
   padding: 1.5em 5vw;
   display: flex;
@@ -248,7 +259,7 @@ body {
               cursor: pointer;
               display: block; }
             #nav .nav-list ul li:hover a {
-              color: #f4f4f4; } }
+              color: #f3e5c9; } }
 
 #container {
   margin: 5vh 0;

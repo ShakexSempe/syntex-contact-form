@@ -18,8 +18,7 @@ form {
         position: relative;
         // active class
         &.open {
-            height: 70vh;
-            background: #fff;
+            background: #fff000;
         }
         // end of active class
         // button
@@ -74,6 +73,10 @@ form {
                 margin: .1em 0;
             }
         }
+
+        &:hover {
+            background-color: #fff;
+        }
     }
 
     .input-div {
@@ -94,22 +97,30 @@ form {
         }
 
         input {
-            border: 1px solid #000;
+            outline: 2px solid $text-brand;
+            outline-offset: -3px;
             padding: 1em .5em;
             transition: .5s ease;
-            background-color: #000;
+            background-color: #161616;
             color: $text-brand;
             border-radius: 5px;
+            border: none;
+
 
             &:focus {
-                color: #fff;
-                background-color: #000;
+                color: $text-brand;
+                background-color: #333;
+                border: none;
                 letter-spacing: .2em;
+                outline: 2px solid $text-brand;
+                outline-offset: -3px;
             }
 
             &:invalid {
-                // background-color: $invalid;
-                background-color: #333;
+                background-color: #333a;
+                border: none;
+                outline: 2px dashed $text-brand;
+                outline-offset: -2px;
             } 
         }
 
@@ -123,6 +134,12 @@ form {
         ::placeholder {
             text-transform: capitalize;
             color: hsl(0, 0%, 64%);
+        }
+        // services div
+        &.services {
+            input {
+                margin: .5em 0;
+            }
         }
 
         // input hover state
