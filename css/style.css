@@ -134,21 +134,41 @@ body {
     border-radius: 50%;
     position: absolute;
     right: .5em;
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
+    padding: 1em;
     cursor: pointer;
     display: grid;
     place-items: center;
     transition: .3s ease; }
     #nav .nav-toggle .bar {
       position: absolute;
-      width: 70%;
+      width: 60%;
       height: 2px;
-      background-color: #ead2a1; }
+      background-color: #ead2a1;
+      transition: .3s; }
+      #nav .nav-toggle .bar::before, #nav .nav-toggle .bar::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #ead2a1;
+        transition: .3s ease; }
+      #nav .nav-toggle .bar::before {
+        transform: translateY(0.3em); }
+      #nav .nav-toggle .bar:after {
+        transform: translateY(-0.3em); }
     #nav .nav-toggle:hover {
       transform: scale(0.95); }
     #nav .nav-toggle:active {
       transform: scale(0.9); }
+    #nav .nav-toggle.active {
+      transform: scale(0.95);
+      transition: .5s ease; }
+      #nav .nav-toggle.active .bar::before {
+        transform: translateY(0); }
+      #nav .nav-toggle.active .bar::after {
+        transform: translateY(0); }
     @media (min-width: 768px) {
       #nav .nav-toggle {
         display: none; } }
