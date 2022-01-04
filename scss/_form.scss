@@ -13,6 +13,11 @@ form {
         overflow-y: auto;
         height: 0vh;
         transition: 1s ease;
+        // active class
+        &.open {
+            height: 70vh;
+        }
+        // end of active class
         &:hover {
             height: 70vh;
         }

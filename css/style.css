@@ -12,6 +12,8 @@ form {
     overflow-y: auto;
     height: 0vh;
     transition: 1s ease; }
+    form fieldset.open {
+      height: 70vh; }
     form fieldset:hover {
       height: 70vh; }
     form fieldset legend {
