@@ -10,8 +10,8 @@ form {
     margin: 5vh auto;
     background-color: #ddd;
     padding: 1.3em .2em;
-    overflow-y: auto;
-    height: 0vh;
+    overflow-y: scroll;
+    height: 70vh;
     transition: 1s ease;
     border-radius: 3px;
     position: relative; }
@@ -45,8 +45,6 @@ form {
         opacity: 0; }
       form fieldset .field-btn.active::after {
         opacity: 1; }
-    form fieldset:hover {
-      height: 70vh; }
     form fieldset legend {
       margin: 0 1em;
       font-size: 1.1em;
