@@ -13,7 +13,7 @@ form {
     overflow-y: auto;
     height: auto;
     transition: 1s ease;
-    border-radius: 3px;
+    border-radius: 5px;
     position: relative; }
     form fieldset.open {
       background: #fff000; }
@@ -47,7 +47,12 @@ form {
     form fieldset legend {
       margin: 0 1em;
       font-size: 1.1em;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      background-color: #161616;
+      color: #ead2a1;
+      border-radius: 5px;
+      padding: .2em;
+      border: 2px solid #333a; }
     form fieldset .input-div {
       width: 100%; }
       form fieldset .input-div label {

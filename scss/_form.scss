@@ -14,7 +14,7 @@ form {
         overflow-y: auto;
         height: auto;
         transition: 1s ease;
-        border-radius: 3px;
+        border-radius: 5px;
         position: relative;
         // active class
         &.open {
@@ -61,6 +61,11 @@ form {
             margin: 0 1em;
             font-size: 1.1em;
             text-transform: capitalize;
+            background-color: $background;
+            color: $text-brand;
+            border-radius: 5px;
+            padding: .2em;
+            border: 2px solid #333a;
         }
 
         .input-div {
