@@ -8,8 +8,8 @@ form {
     padding: .2em;
 
     fieldset {
-        border: 1px solid red;
-        padding: .5em .2em;
+        background-color: $invalid;
+        padding: 1em .2em;
         overflow-y: auto;
         height: 0vh;
         transition: 1s ease;
@@ -22,7 +22,9 @@ form {
 
         .input-div {
             width: 80%;
-
+            label {
+                margin-top: .5em;
+            }
             input {
                 margin: 1em 0;
             }
@@ -47,16 +49,35 @@ form {
         }
 
         input {
-            // border: 2px dashed blue;
-            padding: .5em;
+            border: 1px solid #000;
+            padding: 1em .5em;
+            transition: .5s ease;
+            background-color: #000;
+            color: $text-brand;
+            border-radius: 5px;
+
+            &:focus {
+                color: #fff;
+                background-color: #000;
+                letter-spacing: .2em;
+            }
+
+            &:invalid {
+                // background-color: $invalid;
+                background-color: #333;
+            } 
         }
 
         textarea {
             padding: .5em;
+            &:invalid {
+                background-color: $invalid;
+            }
         }
 
         ::placeholder {
             text-transform: capitalize;
+            color: hsl(0, 0%, 64%);
         }
 
         // input hover state
@@ -83,6 +104,8 @@ form {
         outline: none;
         position: relative;
         isolation: isolate;
+        background-color: $text-dark;
+        color: $text-brand;
         transition: .3s ease;
 
         // button box shadow

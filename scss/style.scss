@@ -30,7 +30,7 @@ body {
             a {
                 font-size: .9em;
                 text-decoration: none;
-                color: #f4f4f4;
+                color: $text-brand;
                 text-transform: capitalize;
                 cursor: pointer;
             }
@@ -39,7 +39,7 @@ body {
 
     // hamburger display
     .nav-toggle {
-        border: 1px solid #fff;
+        border: 1px solid $text-brand;
         padding: .5em;
         border-radius: 50%;
         position: absolute;
@@ -55,7 +55,7 @@ body {
             position: absolute;
             width: 70%;
             height: 2px;
-            background-color: #f4f4f4;
+            background-color: $text-brand;
         }
 
         &:hover {
@@ -162,11 +162,12 @@ footer {
     width: 100%;
     padding: 1em 5vw;
     background-color: #000;
-    color: #f4f4f4;
+    color: $text-brand;
     text-align: center;
     text-transform: capitalize;
 
     p {
-        color: #fffa;
+        color: #f4f4f4;
+        margin-top: .5em;
     }
 }

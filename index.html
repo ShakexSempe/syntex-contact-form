@@ -33,7 +33,9 @@
         <div class="input-div">
             <label for="first-name">first Name: </label>
             <input type="text" name="first-name" id="first-name"
-            placeholder="your first name">
+            placeholder="your first name"
+            minlength="2"
+            required>
         </div>
         <div class="input-div">
             <label for="name">business Name: </label>
@@ -56,14 +58,12 @@
             <input type="text" name="services" id="services" placeholder="service 3">
             <input type="text" name="services" id="services" placeholder="service 4">
             <input type="text" name="services" id="services" placeholder="service 5">
-            <input type="text" name="services" id="services" placeholder="service 5">
-            <input type="text" name="services" id="services" placeholder="service 5">
         </div>
         </fieldset>
 
         <div class="input-div">
             <label for="name">about: </label>
-            <textarea name="about" col="10" rows="10" ></textarea>
+            <textarea name="about" col="10" rows="10" minlength="5" required></textarea>
         </div>
 
         <button type="submit">submit form</button>
