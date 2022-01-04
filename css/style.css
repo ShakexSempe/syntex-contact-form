@@ -16,7 +16,8 @@ form {
     border-radius: 3px;
     position: relative; }
     form fieldset.open {
-      height: 70vh; }
+      height: 70vh;
+      background: #fff; }
     form fieldset .field-btn {
       position: absolute;
       right: .5em;
