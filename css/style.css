@@ -234,9 +234,10 @@ body {
     min-height: 100vh;
     position: absolute;
     right: -110%;
-    top: 7vh;
+    top: 0;
+    z-index: -1;
     transition: .5s;
-    padding: 1em .5em;
+    padding: 15vh .5em 0;
     display: grid;
     place-items: center; }
     #nav .nav-list ul {
@@ -247,8 +248,24 @@ body {
           text-decoration: none;
           text-transform: capitalize;
           color: #f4f4f4; }
+    #nav .nav-list figure {
+      border-radius: 5px;
+      border: 1px solid #ead2a1;
+      width: 100%;
+      overflow: hidden; }
+      #nav .nav-list figure img {
+        transition: 1.5s ease;
+        width: 100%;
+        transform: translateY(100%);
+        opacity: 0; }
+      @media (min-width: 768px) {
+        #nav .nav-list figure {
+          display: none; } }
     #nav .nav-list.active {
       right: 0; }
+      #nav .nav-list.active figure img {
+        transform: translateY(0);
+        opacity: 1; }
     @media (min-width: 768px) {
       #nav .nav-list {
         position: relative;
