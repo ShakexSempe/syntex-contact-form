@@ -16,6 +16,8 @@ form {
         transition: 1s ease;
         border-radius: 5px;
         position: relative;
+        border-color: #000a;
+        overflow-x: hidden;
         // active class
         &.open {
             background: #fff000;
@@ -105,8 +107,8 @@ form {
             outline: 2px solid $text-brand;
             outline-offset: -3px;
             padding: 1em .5em;
-            transition: .5s ease;
-            background-color: #161616;
+            transition: .3s ease;
+            background-color: $background;
             color: $text-brand;
             border-radius: 5px;
             border: none;
@@ -117,15 +119,18 @@ form {
                 background-color: #333;
                 border: none;
                 letter-spacing: .2em;
-                outline: 2px solid $text-brand;
+                outline: 2px dashed $text-brand;
                 outline-offset: -3px;
+                &::placeholder {
+                    color: $text-brand;
+                }
             }
 
             &:invalid {
                 background-color: #333a;
                 border: none;
                 outline: 2px dashed $text-brand;
-                outline-offset: -2px;
+                outline-offset: -1px;
             } 
         }
 

@@ -14,7 +14,9 @@ form {
     height: auto;
     transition: 1s ease;
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+    border-color: #000a;
+    overflow-x: hidden; }
     form fieldset.open {
       background: #fff000; }
     form fieldset .field-btn {
@@ -78,7 +80,7 @@ form {
       outline: 2px solid #ead2a1;
       outline-offset: -3px;
       padding: 1em .5em;
-      transition: .5s ease;
+      transition: .3s ease;
       background-color: #161616;
       color: #ead2a1;
       border-radius: 5px;
@@ -88,13 +90,15 @@ form {
         background-color: #333;
         border: none;
         letter-spacing: .2em;
-        outline: 2px solid #ead2a1;
+        outline: 2px dashed #ead2a1;
         outline-offset: -3px; }
+        form .input-div input:focus::placeholder {
+          color: #ead2a1; }
       form .input-div input:invalid {
         background-color: #333a;
         border: none;
         outline: 2px dashed #ead2a1;
-        outline-offset: -2px; }
+        outline-offset: -1px; }
     form .input-div textarea {
       padding: .5em; }
       form .input-div textarea:invalid {
