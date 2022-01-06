@@ -18,81 +18,72 @@
         </div>
         <nav>
             <div class="nav-list">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#footer">about</a></li>
-            </ul>
-            <figure>
-                <a href="#">
-                    <img src="img/shakex-logo-min.png" alt="Shakex sempe logo">
-                </a>
-            </figure>
-        </div>
+                <ul class="nav-item">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#footer">about</a></li>
+                </ul>
+                <figure class="nav-item">
+                    <a href="#">
+                        <img src="img/shakex-logo-min.png" alt="Shakex sempe logo">
+                    </a>
+                </figure>
+            </div>
         </nav>
     </nav>
-<div id="container">
-    <header class="form-title">
-        <h1>Let's work</h1>
-    </header>
-    <form action="">
-        <fieldset class="field service-items">
-            <legend>basic info</legend>
-            <!-- <div class="field-btn"></div> -->
-            <div class="input-div">
-                <label for="first-name">first Name: </label>
-                <input type="text" name="first-name" id="first-name"
-                placeholder="your first name"
-                minlength="2"
-                required>
-            </div>
-            <div class="input-div">
-                <label for="tel">phone number </label>
-                <input type="tel" name="tel" id="tel"
-                placeholder="your phone number"
-                min="10"
-                required>
-            </div>
-            <div class="input-div">
-                <label for="email">email address </label>
-                <input type="email" name="email" id="email"
-                placeholder="your email address"
-                required>
-            </div>
-            
-        </fieldset>
-     
-        <fieldset class="field service-items">
-        <legend>Webpage info</legend>
-        <!-- <div class="field-btn"></div> -->
-        <div class="input-div">
-            <label for="name">Website Title: </label>
-            <input type="text" name="name" id="name"
-            placeholder="title of the website"
-            required>
-        </div>
-        <div class="input-div services">
-            <label for="services">services: </label>
-            <input type="text" name="services" id="services" placeholder="service 1">
-            <input type="text" name="services" id="services" placeholder="service 2">
-            <input type="text" name="services" id="services" placeholder="service 3">
-            <input type="text" name="services" id="services" placeholder="service 4">
-            <input type="text" name="services" id="services" placeholder="service 5">
-        </div>
-        </fieldset>
+    <main id="container">
+        <header class="form-title">
+            <h1>Let's work</h1>
+        </header>
 
-        <div class="input-div">
-            <label for="name">about: </label>
-            <textarea name="about" col="10" rows="10" minlength="5" required></textarea>
-        </div>
+        <form action="">
+            <fieldset class="field service-items">
+                <legend>basic info</legend>
+                <!-- <div class="field-btn"></div> -->
+                <div class="input-div">
+                    <label for="first-name">first Name: </label>
+                    <input type="text" name="first-name" id="first-name" placeholder="your first name" minlength="2"
+                        required>
+                </div>
+                <div class="input-div">
+                    <label for="tel">phone number </label>
+                    <input type="tel" name="tel" id="tel" placeholder="your phone number" min="10" required>
+                </div>
+                <div class="input-div">
+                    <label for="email">email address </label>
+                    <input type="email" name="email" id="email" placeholder="your email address" required>
+                </div>
 
-        <button id="submit-btn" type="submit">submit form</button>
-    </form>
+            </fieldset>
 
-</div>
-<footer id="footer">
-    <h3> copyright &copy; shakex sempe</h3>
-    <p id="date"></p>
-</footer>
+            <fieldset class="field service-items">
+                <legend>Webpage info</legend>
+                <!-- <div class="field-btn"></div> -->
+                <div class="input-div">
+                    <label for="name">Website Title: </label>
+                    <input type="text" name="name" id="name" placeholder="title of the website" required>
+                </div>
+                <div class="input-div services">
+                    <label for="services">services: </label>
+                    <input type="text" name="services" id="services" placeholder="service 1">
+                    <input type="text" name="services" id="services" placeholder="service 2">
+                    <input type="text" name="services" id="services" placeholder="service 3">
+                    <input type="text" name="services" id="services" placeholder="service 4">
+                    <input type="text" name="services" id="services" placeholder="service 5">
+                </div>
+            </fieldset>
+
+            <div class="input-div">
+                <label for="name">about: </label>
+                <textarea name="about" col="10" rows="10" minlength="5" required></textarea>
+            </div>
+
+            <button id="submit-btn" type="submit">submit form</button>
+        </form>
+    </main>
+    <footer id="footer">
+        <h3> copyright &copy; shakex sempe</h3>
+        <p id="date"></p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
