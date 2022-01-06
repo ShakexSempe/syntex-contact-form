@@ -112,6 +112,7 @@ form {
             color: $text-brand;
             border-radius: 5px;
             border: none;
+            font-size: 1.1em;
 
 
             &:focus {
@@ -136,6 +137,7 @@ form {
 
         textarea {
             padding: .5em;
+            font-size: 1.2em;
             &:invalid {
                 background-color: $invalid;
             }

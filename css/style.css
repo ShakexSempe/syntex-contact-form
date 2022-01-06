@@ -84,7 +84,8 @@ form {
       background-color: #161616;
       color: #ead2a1;
       border-radius: 5px;
-      border: none; }
+      border: none;
+      font-size: 1.1em; }
       form .input-div input:focus {
         color: #ead2a1;
         background-color: #333;
@@ -100,7 +101,8 @@ form {
         outline: 2px dashed #ead2a1;
         outline-offset: -1px; }
     form .input-div textarea {
-      padding: .5em; }
+      padding: .5em;
+      font-size: 1.2em; }
       form .input-div textarea:invalid {
         background-color: #f4f4f4; }
     form .input-div ::placeholder {
