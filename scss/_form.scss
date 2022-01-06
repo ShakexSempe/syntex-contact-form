@@ -176,7 +176,6 @@ form {
         outline: none;
         position: relative;
         isolation: isolate;
-        background-color: $text-dark;
         color: $text-brand;
         transition: .3s ease;
 
@@ -192,17 +191,21 @@ form {
             border-radius: 10px;
             border: none;
             outline: none;
-            transition: .2s ease;
+            transition: .3s ease;
         }
 
         &::before {
+            background-image: linear-gradient(0deg, #000, #333a);
             box-shadow: inset 2px 2px 3px #fffa,
-                        inset -2px -2px 3px #000a;
+                        inset -2px -2px 3px #000a,
+                        5px 10px 3px rgba(0, 0, 0, 0.130);
         }
         &::after {
+            background-image: linear-gradient(0deg, #333a, #000);
             opacity: 0;
             box-shadow: inset 2px 2px 3px #000a,
-                        inset -2px -2px 3px #fffa;
+                        inset -2px -2px 3px #fffa,
+                        0px 5px 3px rgba(0, 0, 0, 0.220);
         }
 
         // button hover state
