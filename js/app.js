@@ -18,4 +18,4 @@ navItem.forEach(item => {
         navList.classList.toggle("active");
         toggle.classList.toggle("active");
     })
-})
+});
