@@ -55,44 +55,75 @@
                 <legend>basic info</legend>
                 <!-- <div class="field-btn"></div> -->
                 <div class="input-div">
-                    <label for="first-name">first Name: </label>
-                    <input type="text" name="first-name" id="first-name" placeholder="your first name" minlength="2"
-                        required>
+                    <label for="first-name">Name: </label>
+                    <input type="text" 
+                    name="first-name" 
+                    id="first-name" 
+                    title="first name and last name" 
+                    placeholder="your first and last name" 
+                    minlength="2"
+                    tabindex="1"
+                    required>
                 </div>
                 <div class="input-div">
                     <label for="tel">phone number </label>
-                    <input type="tel" name="tel" id="tel" placeholder="your phone number" min="10" required>
+                    <input type="tel" 
+                    name="tel" 
+                    id="tel" 
+                    title="phone number" 
+                    placeholder="your phone number" 
+                    minlength="10" 
+                    tabindex="2"
+                    required>
                 </div>
                 <div class="input-div">
                     <label for="email">email address </label>
-                    <input type="email" name="email" id="email" placeholder="your email address" required>
+                    <input type="email" 
+                    name="email" 
+                    title="email address" 
+                    id="email" 
+                    placeholder="your email address" 
+                    tabindex="3"
+                    required>
                 </div>
-
             </fieldset>
 
             <fieldset class="field service-items">
                 <legend>Webpage info</legend>
                 <!-- <div class="field-btn"></div> -->
                 <div class="input-div">
-                    <label for="name">Website Title: </label>
-                    <input type="text" name="name" id="name" placeholder="title of the website" required>
+                    <label for="website title">Website Title: </label>
+                    <input type="text" 
+                    name="website title" 
+                    id="website title" 
+                    title="website title" 
+                    placeholder="title of the website" 
+                    minlength="2"
+                    tabindex="4"
+                    required>
                 </div>
                 <div class="input-div services">
                     <label for="services">services: </label>
-                    <input type="text" name="services" id="services" placeholder="service 1">
-                    <input type="text" name="services" id="services" placeholder="service 2">
-                    <input type="text" name="services" id="services" placeholder="service 3">
-                    <input type="text" name="services" id="services" placeholder="service 4">
-                    <input type="text" name="services" id="services" placeholder="service 5">
+                    <input type="text" title="service-1" name="services" id="service-1" tabindex="5" placeholder="service 1">
+                    <input type="text" title="service-2" name="services" id="service-2" tabindex="6" placeholder="service 2">
+                    <input type="text" title="service-3" name="services" id="service-3" tabindex="7" placeholder="service 3">
+                    <input type="text" title="service-4" name="services" id="service-4" tabindex="8" placeholder="service 4">
+                    <input type="text" title="service-5" name="services" id="service-5" tabindex="9" placeholder="service 5">
                 </div>
             </fieldset>
 
             <div class="input-div">
                 <label for="name">about: </label>
-                <textarea name="about" col="10" rows="10" minlength="5" required></textarea>
+                <textarea name="about" title="about your website" 
+                col="10" 
+                rows="10" 
+                minlength="5" 
+                placeholder="provide details about your website and services to users and clients respectively"
+                tabindex="10"
+                required></textarea>
             </div>
 
-            <button id="submit-btn" type="submit">submit form</button>
+            <button tabindex="20" id="submit-btn" type="submit">submit form</button>
         </form>
     </main>
     <footer id="footer">
