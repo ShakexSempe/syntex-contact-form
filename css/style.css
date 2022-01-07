@@ -155,6 +155,12 @@ form {
         opacity: 0; }
       form #submit-btn:hover::after {
         opacity: 1; }
+    form #submit-btn:focus {
+      transform: scale(0.95); }
+      form #submit-btn:focus::before {
+        opacity: 0; }
+      form #submit-btn:focus::after {
+        opacity: 1; }
 
 * {
   margin: 0;
@@ -278,7 +284,8 @@ body {
         top: 0;
         padding: .3em 0;
         border-radius: 5px;
-        min-height: auto; }
+        min-height: auto;
+        z-index: 5; }
         #nav .nav-list ul {
           display: flex; }
           #nav .nav-list ul li {

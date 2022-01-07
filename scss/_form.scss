@@ -217,5 +217,11 @@ form {
             &::before {opacity: 0;}
             &::after {opacity: 1;}
         }
+        // button focus state
+        &:focus {
+            transform: scale(.95);
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
     }
 }
