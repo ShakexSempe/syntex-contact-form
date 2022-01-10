@@ -189,10 +189,10 @@ form {
       outline: none;
       transition: .3s ease; }
     form #submit-btn::before {
-      background-image: linear-gradient(0deg, #000, #333a);
+      background-image: linear-gradient(0deg, #000, #000a);
       box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a, 5px 10px 3px rgba(0, 0, 0, 0.13); }
     form #submit-btn::after {
-      background-image: linear-gradient(0deg, #333a, #000);
+      background-image: linear-gradient(0deg, #000a, #000);
       opacity: 0;
       box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #fffa, 0px 5px 3px rgba(0, 0, 0, 0.22); }
     form #submit-btn:hover {
