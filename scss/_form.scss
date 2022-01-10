@@ -6,7 +6,6 @@ form {
     // border: 1px solid #000;
     margin: 5vh auto;
     padding: .2em;
-
     fieldset {
         margin: 5vh auto;
         background-color: $invalid;
@@ -68,6 +67,7 @@ form {
             border-radius: 5px;
             padding: .2em;
             border: 2px solid #333a;
+            cursor: help;
         }
 
         .input-div {
@@ -110,6 +110,9 @@ form {
             outline: 1px solid $text-brand;
             outline-offset: -2px;
             cursor: help;
+            @media (max-width: 768px) {
+                width: 90%;
+            }
 
             i {
                 color: #000;
@@ -137,6 +140,7 @@ form {
 
             &:hover {
                 height: 50vh;
+                overflow: auto;
                 background-color: $background;
                 i {
                     color: $text-brand;
@@ -147,6 +151,7 @@ form {
             //  ACTIVE CLASS
             &.active {
                 height: 50vh;
+                overflow: auto;
                 outline: 1px dashed $text-brand;
                 background-color: $background;
 
