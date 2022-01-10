@@ -71,6 +71,53 @@ form {
     padding: .5em .1em;
     transition: .3s ease;
     position: relative; }
+    form .input-div .info-section {
+      background-color: #fff;
+      color: #f4f4f4;
+      height: 0;
+      width: 80%;
+      padding: 1em 1em 2em;
+      margin: 0 .5em 1em;
+      overflow: hidden;
+      transition: .5s;
+      position: relative;
+      border-radius: 5px;
+      outline: 1px solid #ead2a1;
+      outline-offset: -2px;
+      cursor: help; }
+      form .input-div .info-section i {
+        color: #000;
+        background-color: #ead2a1;
+        border-radius: 50%;
+        position: absolute;
+        top: .5em;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: .2s;
+        animation: pulse 2s infinite; }
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.2); } }
+      form .input-div .info-section p {
+        margin: 2em 0;
+        padding: 1em 0;
+        line-height: 1.6; }
+      form .input-div .info-section:hover {
+        height: 50vh;
+        background-color: #161616; }
+        form .input-div .info-section:hover i {
+          color: #ead2a1;
+          background-color: #161616; }
+      form .input-div .info-section.active {
+        height: 50vh;
+        outline: 1px dashed #ead2a1;
+        background-color: #161616; }
+        form .input-div .info-section.active i {
+          color: #ead2a1;
+          background-color: #161616;
+          animation: none;
+          opacity: .8; }
     form .input-div label {
       transform: translateY(-0.5em);
       text-transform: capitalize;
