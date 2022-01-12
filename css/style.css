@@ -65,6 +65,18 @@ form {
         margin: .1em 0; }
     form fieldset:hover {
       background-color: #fff; }
+    form fieldset.features h2 {
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      text-align: center; }
+    form fieldset.features .feature-items {
+      padding: 1em 0; }
+      form fieldset.features .feature-items .item {
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 1em 0; }
   form .input-div {
     display: flex;
     flex-direction: column;
