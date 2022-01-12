@@ -234,7 +234,9 @@ form {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh; }
 
 body {
   width: 100vw;
@@ -312,40 +314,31 @@ body {
     min-height: 100vh;
     position: absolute;
     right: -110%;
-    top: 0;
+    top: 5vh;
     z-index: -1;
     transition: .5s;
-    padding: 15vh .5em 0;
-    display: grid;
-    place-items: center; }
+    padding: 15vh .5em 0; }
     #nav .nav-list ul {
       list-style: none; }
       #nav .nav-list ul li {
-        margin-bottom: 1em; }
+        margin-bottom: 2em; }
         #nav .nav-list ul li a {
+          display: block;
           text-decoration: none;
           text-transform: capitalize;
-          color: #f4f4f4; }
-    #nav .nav-list figure {
-      border-radius: 5px;
-      border: 1px solid #ead2a1;
-      width: 50vw;
-      height: auto;
-      overflow: hidden; }
-      #nav .nav-list figure img {
-        transition: 1.5s ease;
-        width: 100%;
-        transform: translateY(100%);
-        opacity: 0;
-        object-fit: contain; }
-      @media (min-width: 768px) {
-        #nav .nav-list figure {
-          display: none; } }
-    #nav .nav-list.active {
-      right: 0; }
-      #nav .nav-list.active figure img {
-        transform: translateY(0);
-        opacity: 1; }
+          color: #f4f4f4;
+          width: 100%; }
+    @media (max-width: 768px) {
+      #nav .nav-list.active {
+        right: -5vw; }
+        #nav .nav-list.active ul {
+          border: 1px solid #ead2a1;
+          width: 95%;
+          padding: 1em .5em;
+          display: flex;
+          flex-direction: column;
+          align-items: right;
+          justify-content: center; } }
     @media (min-width: 768px) {
       #nav .nav-list {
         position: relative;
@@ -358,7 +351,8 @@ body {
         min-height: auto;
         z-index: 5; }
         #nav .nav-list ul {
-          display: flex; }
+          display: flex;
+          flex-direction: row; }
           #nav .nav-list ul li {
             margin: 0 .5em 0 2em; }
             #nav .nav-list ul li a {
@@ -391,6 +385,12 @@ body {
       text-shadow: 0 0 5px #ead2a1, 0 0 20px #000a; }
     #container header p {
       margin: .5em auto; }
+      #container header p a {
+        color: #000;
+        transition: .2s; }
+        #container header p a:hover {
+          color: #000a;
+          text-decoration: none; }
 
 footer {
   width: 100%;
