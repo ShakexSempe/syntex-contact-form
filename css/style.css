@@ -7,6 +7,7 @@ form {
       width: 90%;
       margin: 5vh auto; } }
   form fieldset {
+    min-height: 100vh;
     margin: 5vh auto;
     background-color: #f4f4f4;
     padding: 1.3em .2em;
@@ -328,13 +329,15 @@ body {
     #nav .nav-list figure {
       border-radius: 5px;
       border: 1px solid #ead2a1;
-      width: 100%;
+      width: 50vw;
+      height: auto;
       overflow: hidden; }
       #nav .nav-list figure img {
         transition: 1.5s ease;
         width: 100%;
         transform: translateY(100%);
-        opacity: 0; }
+        opacity: 0;
+        object-fit: contain; }
       @media (min-width: 768px) {
         #nav .nav-list figure {
           display: none; } }
@@ -378,6 +381,16 @@ body {
   #container header {
     text-align: center;
     margin: 1em auto; }
+    #container header h1 {
+      font-size: 2.5em;
+      color: #000; }
+    #container header h2 {
+      font-size: 2em;
+      color: #ffff;
+      margin: .5em auto;
+      text-shadow: 0 0 5px #ead2a1, 0 0 20px #000a; }
+    #container header p {
+      margin: .5em auto; }
 
 footer {
   width: 100%;

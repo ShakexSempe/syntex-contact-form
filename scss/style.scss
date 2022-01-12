@@ -128,7 +128,8 @@ body {
         figure {
             border-radius: 5px;
             border: 1px solid $text-brand;
-            width: 100%;
+            width: 50vw;
+            height: auto;
             overflow: hidden;
 
             img {
@@ -136,6 +137,7 @@ body {
                 width: 100%;
                 transform: translateY(100%);
                 opacity: 0;
+                object-fit: contain;
             }
             @media (min-width: 768px) {
                 display: none;
@@ -203,6 +205,22 @@ body {
     header {
         text-align: center;
         margin: 1em auto;
+        // border: 1px solid red;
+
+        h1 {
+            font-size: 2.5em;
+            color: $text-dark;
+        }
+        h2 {
+            font-size: 2em;
+            color: #ffff;
+            margin: .5em auto;
+            text-shadow: 0 0 5px $text-brand,
+                        0 0 20px #000a;
+        }
+        p {
+            margin: .5em auto;
+        }
     }
 
  

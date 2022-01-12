@@ -7,6 +7,7 @@ form {
     margin: 5vh auto;
     padding: .2em;
     fieldset {
+        min-height: 100vh;
         margin: 5vh auto;
         background-color: $invalid;
         padding: 1.3em .2em;
