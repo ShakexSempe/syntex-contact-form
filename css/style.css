@@ -75,8 +75,11 @@ form {
         background-color: #eee;
         display: flex;
         flex-direction: column;
-        padding: 5px;
         margin: 1em 0; }
+        form fieldset.features .feature-items .item input {
+          width: 100%; }
+        form fieldset.features .feature-items .item textarea {
+          width: 100%; }
   form .input-div {
     display: flex;
     flex-direction: column;

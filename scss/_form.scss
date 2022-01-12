@@ -98,8 +98,15 @@ form {
                     background-color: #eee;
                     display: flex;
                     flex-direction: column;
-                    padding: 5px;
+                    // padding: 5px;
                     margin: 1em 0;
+
+                    input {
+                        width: 100%;
+                    }
+                    textarea {
+                        width: 100%;
+                    }
                 }
             }
         }
