@@ -62,11 +62,11 @@ form {
             margin: 0 1em;
             font-size: 1.1em;
             text-transform: capitalize;
-            background-color: $background;
+            background-color: $background;;
             color: $text-brand;
             border-radius: 5px;
             padding: .2em;
-            border: 2px solid #333a;
+            border: 1px solid #333a;
             cursor: help;
         }
 
@@ -82,7 +82,7 @@ form {
         }
 
         &:hover {
-            background-color: #fff;
+            background-color: $background-active;
         }
     }
 

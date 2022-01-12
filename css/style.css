@@ -54,7 +54,7 @@ form {
       color: #ead2a1;
       border-radius: 5px;
       padding: .2em;
-      border: 2px solid #333a;
+      border: 1px solid #333a;
       cursor: help; }
     form fieldset .input-div {
       width: 100%; }
