@@ -5,16 +5,18 @@ form {
     }
     // border: 1px solid #000;
     margin: 5vh auto;
-    padding: .2em;
+    padding: 0;
     fieldset {
-        min-height: 100vh;
+        @media (min-width: 768px) {
+            padding: 1.5em .5em;
+            border-radius: 5px;
+        }
         margin: 5vh auto;
         background-color: $invalid;
-        padding: 1.3em .2em;
+        padding: 1.3em .5em;
         overflow-y: auto;
         height: auto;
         transition: 1s ease;
-        border-radius: 5px;
         position: relative;
         border-color: #000a;
         overflow-x: hidden;
@@ -63,7 +65,7 @@ form {
             margin: 0 1em;
             font-size: 1.1em;
             text-transform: capitalize;
-            background-color: $background;;
+            background: $overlay-blue-darker;
             color: $text-brand;
             border-radius: 5px;
             padding: .2em;
@@ -204,7 +206,7 @@ form {
             outline-offset: -3px;
             padding: 1em .5em;
             transition: .3s ease;
-            background-color: $background;
+            background-color: $overlay-blue-darker;
             color: $text-brand;
             border-radius: 5px;
             border: none;
@@ -215,7 +217,7 @@ form {
                 color: $text-brand;
                 background-color: #333;
                 border: none;
-                letter-spacing: .2em;
+                letter-spacing: .1em;
                 outline: 2px dashed $text-brand;
                 outline-offset: -3px;
                 &::placeholder {

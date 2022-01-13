@@ -26,7 +26,7 @@
 <body>
     <nav id="nav">
         <div class="brand">
-            <h1><a href="#">syntex</a></h1>
+            <h1><a title="Syntex: Web Development" href="#">syntex</a></h1>
         </div>
 
         <div class="nav-toggle" id="toggle">
@@ -35,21 +35,28 @@
         <nav>
             <div class="nav-list">
                 <ul class="nav-item">
-                    <li><a href="#personal">personal</a></li>
-                    <li><a href="#webpage">webpage</a></li>
-                    <li><a href="#features">features</a></li>
+                    <li><a title="Personal info section" href="#personal">personal</a></li>
+                    <li><a title="webpage info section" href="#webpage">webpage</a></li>
+                    <li><a title="features info section" href="#features">features</a></li>
                 </ul>
             </div>
         </nav>
     </nav>
     <main id="container">
         <header class="form-title">
-            <h1>Syntex</h1>
-            <h2>Web development</h2>
-            <p>Fill the <a href="#form">form</a> and lets build your webpage</p>
+            <div class="title">
+                <h1>Syntex</h1>
+                <h2>Web development</h2>
+                <p>Fill the <a href="#form">form</a> and lets build your webpage</p>
+            </div>
+            <figure title="Shakex Sempe logo">
+                <a href="#form">
+                    <img src="/img/shakex-logo-min.png" alt="Shakex Sempe logo">
+                </a>
+            </figure>
         </header>
 
-        <form id="form" action=""> 
+        <form id="form" action="POST"> 
             <!-- PERSONAL INFO -->
             <fieldset title="Personal details" id="personal" class="field ">
                 <legend >basic personal info</legend>
@@ -151,11 +158,11 @@
                 </div>
             </fieldset>
             <!-- WEBPAGE DETAILS -->
-            <fieldset title="curriculum items" id="features" class="field features">
+            <fieldset title="features items" id="features" class="field features">
                 <legend title="Webpage details">Webpage details</legend>
                 <!-- CURRICULUM -->
                 <section class="feature-items">
-                    <h2>curriculum</h3>
+                    <h2>featuress</h3>
                         <!-- ITEM -->
                         <div class="item input-div">
                             <label for="item-1">item-name</label>

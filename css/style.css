@@ -1,23 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Open+Sans:wght@300;400;500;700&display=swap");
 form {
   margin: 5vh auto;
-  padding: .2em; }
+  padding: 0; }
   @media (min-width: 768px) {
     form {
       width: 90%;
       margin: 5vh auto; } }
   form fieldset {
-    min-height: 100vh;
     margin: 5vh auto;
     background-color: #f4f4f4;
-    padding: 1.3em .2em;
+    padding: 1.3em .5em;
     overflow-y: auto;
     height: auto;
     transition: 1s ease;
-    border-radius: 5px;
     position: relative;
     border-color: #000a;
     overflow-x: hidden; }
+    @media (min-width: 768px) {
+      form fieldset {
+        padding: 1.5em .5em;
+        border-radius: 5px; } }
     form fieldset.open {
       background: #fff000; }
     form fieldset .field-btn {
@@ -51,7 +53,7 @@ form {
       margin: 0 1em;
       font-size: 1.1em;
       text-transform: capitalize;
-      background-color: #161616;
+      background: #20262e;
       color: #ead2a1;
       border-radius: 5px;
       padding: .2em;
@@ -150,7 +152,7 @@ form {
       outline-offset: -3px;
       padding: 1em .5em;
       transition: .3s ease;
-      background-color: #161616;
+      background-color: #20262e;
       color: #ead2a1;
       border-radius: 5px;
       border: none;
@@ -159,7 +161,7 @@ form {
         color: #ead2a1;
         background-color: #333;
         border: none;
-        letter-spacing: .2em;
+        letter-spacing: .1em;
         outline: 2px dashed #ead2a1;
         outline-offset: -3px; }
         form .input-div input:focus::placeholder {
@@ -250,12 +252,15 @@ body {
   position: fixed;
   top: 0;
   height: 5vh;
-  background-color: #161616;
+  background-color: #29323c;
   width: 100%;
-  padding: 1.5em 5vw;
+  padding: 1.5em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (min-width: 768px) {
+    #nav {
+      padding: 1.5em 10vw; } }
   #nav .brand h1 a {
     font-size: .9em;
     text-decoration: none;
@@ -308,7 +313,7 @@ body {
         display: none; } }
   #nav .nav-list {
     border: none;
-    background-color: #161616;
+    background-color: #20262e;
     color: #f4f4f4;
     width: 100%;
     min-height: 100vh;
@@ -365,24 +370,24 @@ body {
 #container {
   margin: 5vh 0;
   width: 100%;
-  min-height: 100vh;
   overflow-x: hidden;
-  padding: 1em .5em;
+  padding: 1em 0;
   position: relative; }
   @media (min-width: 768px) {
     #container {
-      padding: 5vh 5vw; } }
+      padding: 0 5vw; } }
   #container header {
     text-align: center;
-    margin: 1em auto; }
+    margin: 1em auto;
+    min-height: 100vh; }
     #container header h1 {
       font-size: 2.5em;
-      color: #000; }
+      color: #29323c; }
     #container header h2 {
       font-size: 2em;
       color: #ffff;
       margin: .5em auto;
-      text-shadow: 0 0 5px #ead2a1, 0 0 20px #000a; }
+      text-shadow: 1px 1px 1px #29323c, 0 0 5px #ead2a1, 0 0 20px #000a; }
     #container header p {
       margin: .5em auto; }
       #container header p a {
@@ -391,6 +396,32 @@ body {
         #container header p a:hover {
           color: #000a;
           text-decoration: none; }
+    #container header figure {
+      width: 80%;
+      overflow: hidden;
+      margin: 10vh auto 5vh;
+      border-radius: 35px;
+      background: #29323c; }
+      #container header figure img {
+        width: 100%;
+        border-radius: 5px;
+        transition: .2s; }
+      #container header figure:hover img {
+        transform: scale(0.95); }
+      #container header figure:active img {
+        transform: scale(0.8); }
+    @media (min-width: 768px) {
+      #container header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0; }
+        #container header .title {
+          margin: 0 5vw; }
+        #container header figure {
+          width: 40%;
+          margin: 0 5vw;
+          overflow: hidden; } }
 
 footer {
   width: 100%;
