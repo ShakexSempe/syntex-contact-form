@@ -23,7 +23,7 @@ navItem.forEach(item => {
     item.addEventListener("click", () => {
         navList.classList.toggle("active");
         toggle.classList.toggle("active");
-        container.classList.toggle("dim");
+    container.classList.toggle("dim");
 
     })
 });

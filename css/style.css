@@ -245,7 +245,8 @@ body {
   min-height: 100vh;
   font-size: 16px;
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  position: relative; }
 
 #nav {
   z-index: 10;
@@ -320,9 +321,9 @@ body {
     position: absolute;
     right: -110%;
     top: 5vh;
-    z-index: -1;
     transition: .5s;
-    padding: 15vh .5em 0; }
+    padding: 15vh .5em 0;
+    z-index: -2; }
     #nav .nav-list ul {
       list-style: none; }
       #nav .nav-list ul li {
@@ -387,9 +388,11 @@ body {
       height: 100%;
       background: #29323c;
       opacity: 0;
-      transition: .5s; }
+      transition: .5s;
+      z-index: -5; }
     #container.dim::after {
-      opacity: .5; } }
+      opacity: .5;
+      z-index: 5; } }
   #container header {
     text-align: center;
     margin: 1em auto;
