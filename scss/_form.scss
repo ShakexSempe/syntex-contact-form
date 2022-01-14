@@ -263,7 +263,7 @@ form {
     // submit button       
     #submit-btn {
         display: block;
-        width: 100%;
+        width: 80%;
         margin: 5vh auto;
         padding: 1em;
         cursor: pointer;
@@ -295,13 +295,13 @@ form {
         }
 
         &::before {
-            background-image: linear-gradient(0deg, #000, #000a);
+            background-image: linear-gradient(0deg, $overlay-blue-darker, $overlay-blue-light);
             box-shadow: inset 2px 2px 3px #fffa,
                         inset -2px -2px 3px #000a,
                         5px 10px 3px rgba(0, 0, 0, 0.130);
         }
         &::after {
-            background-image: linear-gradient(0deg, #000a, #000);
+            background-image: linear-gradient(0deg, $overlay-blue-light, $overlay-blue-darker);
             opacity: 0;
             box-shadow: inset 2px 2px 3px #000a,
                         inset -2px -2px 3px #fffa,

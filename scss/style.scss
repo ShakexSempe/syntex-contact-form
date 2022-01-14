@@ -222,7 +222,7 @@ body {
     header {
         text-align: center;
         margin: 1em auto;
-        min-height: 100vh;
+        min-height: 100vh;;
         h1 {
             font-size: 2.5em;
             color: $overlay-blue-dark;
@@ -305,14 +305,41 @@ body {
 }
 footer {
     width: 100%;
-    padding: 1em 5vw;
-    background-color: #000;
+    padding: 5vh 5vw;
+    background-color: $overlay-blue-darker;
     color: $text-brand;
     text-align: center;
     text-transform: capitalize;
 
     p {
-        color: #f4f4f4;
+        color: $text-light;
         margin-top: .5em;
+    }
+
+    a {
+        color: $text-brand;
+        text-decoration: none;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%) translateY(200%);
+            width: 80%;
+            height: 2px;
+            opacity: 0;
+            background-color: $text-brand;
+            transition: .2s;
+        }
+
+        // HOVER STATE
+        &:hover {
+            &::after {
+                opacity: 1;
+            transform: translateX(-50%) translateY(0%);
+            }
+        }
     }
 }
