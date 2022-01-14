@@ -11,8 +11,11 @@ date.innerHTML = new Date().getFullYear();
 
 // hamburger
 toggle.addEventListener("click", () => {
+const container = document.getElementById("container");
+
     navList.classList.toggle("active");
     toggle.classList.toggle("active");
+    container.classList.toggle("dim");
 });
 
 // nav items 
@@ -20,6 +23,8 @@ navItem.forEach(item => {
     item.addEventListener("click", () => {
         navList.classList.toggle("active");
         toggle.classList.toggle("active");
+        container.classList.toggle("dim");
+
     })
 });
 
