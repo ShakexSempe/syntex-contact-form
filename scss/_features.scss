@@ -37,17 +37,26 @@
             cursor: cell;
             text-transform: capitalize;
             &.submit-btn {
-                background-color: $text-brand;
+                background: $overlay;
+                color: $text-light;
             }
             &.clear-btn {
-                background-color: #ac0929;
+                background: $background-crimson;
                 color: $text-light;
             }
         }
     }
 
     .feature-container {
-        border: 1px solid green;
-        padding: 1em 0;
+        border: none;
+        outline: none;
+        background: $text-brand;
+        padding:.5em;
+        margin: 5vh 0;
+        border-radius: 5px;
+
+        input, textarea {
+            width: 100%;
+        }
     }
 }

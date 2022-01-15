@@ -29,8 +29,7 @@ form {
       display: block;
       width: 3em;
       padding: .8em 2em;
-      border-radius: 15px;
-      border: 1px solid green; }
+      border-radius: 15px; }
       form fieldset .field-btn::after, form fieldset .field-btn::before {
         position: absolute;
         display: grid;
@@ -260,13 +259,20 @@ form {
       cursor: cell;
       text-transform: capitalize; }
       #features .feature-items button.submit-btn {
-        background-color: #ead2a1; }
+        background: linear-gradient(60deg, #20262e, #485563);
+        color: #f4f4f4; }
       #features .feature-items button.clear-btn {
-        background-color: #ac0929;
+        background: linear-gradient(60deg, #960d28, #ac0929);
         color: #f4f4f4; }
   #features .feature-container {
-    border: 1px solid green;
-    padding: 1em 0; }
+    border: none;
+    outline: none;
+    background: #ead2a1;
+    padding: .5em;
+    margin: 5vh 0;
+    border-radius: 5px; }
+    #features .feature-container input, #features .feature-container textarea {
+      width: 100%; }
 
 * {
   margin: 0;

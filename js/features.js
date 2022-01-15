@@ -35,11 +35,11 @@ const addItem = (e) => {
         attribute.value = id;
         element.setAttributeNode(attribute);
 
-        element.innerHTML = `<label for="item-1">feature</label>
+        element.innerHTML = `<label for="feature">feature</label>
         <input 
-            name="item-1"
-            id="item-1" 
-            title="Item 1" 
+            name="feature"
+            id="item" 
+            title="feature item" 
             class="item-name" 
             type="text" 
             minlength="1" 
@@ -47,13 +47,13 @@ const addItem = (e) => {
             placeholder="${nameValue}" 
             required>
 
-        <label for="item-name">Description</label>
-        <textarea name="item-description" id="item-1-description" title="Item description" cols="30" rows="5"
+        <label for="feature-name">Description</label>
+        <textarea name="feature-description" id="item-1-description" title="Item description" cols="30" rows="5"
             
             minlength="1" 
             value="${descValue}"
-            placeholder="${descValue}" 
-            required></textarea>`;
+            placeholder="describe ${nameValue}"  
+            required>${descValue}</textarea>`;
 
         list.appendChild(element);
     }
