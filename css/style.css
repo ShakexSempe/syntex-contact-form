@@ -233,8 +233,10 @@ form {
         opacity: 1; }
 
 #features {
+  width: 90%;
   overflow: hidden;
-  padding: .5em; }
+  margin: 0 auto;
+  padding: 0 .5em; }
   #features p {
     text-align: center;
     margin: .5em auto; }
@@ -256,6 +258,7 @@ form {
     #features .feature-items button {
       border-radius: 20px;
       padding: .5em 1em;
+      margin: 0 .5em;
       cursor: cell;
       text-transform: capitalize; }
       #features .feature-items button.submit-btn {
@@ -285,7 +288,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-size: 16px;
-  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   position: relative; }
 

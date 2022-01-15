@@ -1,11 +1,14 @@
 #features {
+    width: 90%;
     overflow: hidden;
+    margin: 0 auto;
+    padding: 0 .5em;
     p {
         text-align: center;
         margin: .5em auto;
     }
     // border: 1px solid red;
-    padding: .5em;
+    // padding: 0;
     .feature-items {
         // border: 1px solid blue;
         padding: 0;
@@ -34,6 +37,7 @@
         button {
             border-radius: 20px;
             padding: .5em 1em;
+            margin: 0 .5em;
             cursor: cell;
             text-transform: capitalize;
             &.submit-btn {
