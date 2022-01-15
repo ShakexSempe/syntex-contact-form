@@ -57,6 +57,90 @@
         </header>
 
         <form id="form" action="POST"> 
+             <!-- WEBPAGE DETAILS -->
+             <fieldset title="features items" id="features" class="field features">
+                <legend title="Webpage details">Webpage details</legend>
+                <!-- CURRICULUM -->
+                <section class="feature-items">
+                    <h2>features</h3>
+                        <!-- ADD FEATURE -->
+                        <div class="feature-control">
+                            <input type="text" id="feature" placeholder="e.g. drawing">
+                            <button type="submit" class="submit-btn">
+                                add feature
+                            </button>
+                        </div>
+                        <div class="feature-container">
+                            <div class="feature-list">
+                                <!-- ITEM -->
+                                <!-- <article class="item input-div">
+                            <label for="item-1">item-name</label>
+                            <input 
+                                name="item-1"
+                                id="item-1" 
+                                title="Item 1" 
+                                class="item-name" 
+                                type="text" 
+                                tabindex="40"
+                                minlength="1" 
+                                placeholder="feature-1" 
+                                required>
+                            <label for="item-name">item-description</label>
+                            <textarea name="item-description" id="item-1-descrition" title="Item description" cols="30" rows="5"
+                                tabindex="41" minlength="1" placeholder="feature-1-description" required></textarea>
+                        </article> -->
+                                <!-- END OF ITEM -->
+                                <!-- ITEM -->
+                                <!-- <div class="item input-div">
+                            <label for="item-name">item-name</label>
+                            <input 
+                            name="item-2"
+                            id="item-2" 
+                            title="Item-2" 
+                            class="item-name" 
+                            type="text" 
+                            tabindex="41"
+                            minlength="1" 
+                            placeholder="feature-2" 
+                            required>
+                            <label for="item-name">item-description</label>
+                            <textarea 
+                            name="item-2-description" 
+                            class="item-description" 
+                            id="item-2-description" 
+                            title="Item description" 
+                            cols="30" rows="5"
+                            tabindex="42" 
+                            minlength="1" 
+                            placeholder="feature-2-description" required></textarea>
+                        </div> -->
+                                <!-- END OF ITEM -->
+                                <!-- ITEM -->
+                                <!-- <div class="item input-div">
+                            <label for="item-3">item-name</label>
+                            <input 
+                            name="item-3"
+                            id="item-3" 
+                            title="Item name" 
+                            class="item-name" 
+                            type="text" 
+                            tabindex="43"
+                            minlength="1" 
+                            placeholder="feature-name" 
+                            required>
+                            <label for="item-name">item-description</label>
+                            <textarea name="item-3-description" id="item-3" title="Item description" cols="30" rows="5"
+                                tabindex="44" minlength="1" placeholder="feature-3-description" required></textarea>
+                        </div> -->
+                                <!-- END OF ITEM -->
+                            </div>
+                            <button type="button" class="clear-btn" >clear items</button>
+                        </div>
+                </section>
+                <!-- END OF CURRICULUM -->
+
+            </fieldset>
+            <!-- END OF WEBPAGE DETAILS -->
             <!-- PERSONAL INFO -->
             <fieldset title="Personal details" id="personal" class="field ">
                 <legend >basic personal info</legend>
@@ -157,78 +241,7 @@
                     <input type="text" title="service-5" name="services" id="service-5" tabindex="30" placeholder="service 5">
                 </div>
             </fieldset>
-            <!-- WEBPAGE DETAILS -->
-            <fieldset title="features items" id="features" class="field features">
-                <legend title="Webpage details">Webpage details</legend>
-                <!-- CURRICULUM -->
-                <section class="feature-items">
-                    <h2>features</h3>
-                        <!-- ITEM -->
-                        <div class="item input-div">
-                            <label for="item-1">item-name</label>
-                            <input 
-                                name="item-1"
-                                id="item-1" 
-                                title="Item 1" 
-                                class="item-name" 
-                                type="text" 
-                                tabindex="40"
-                                minlength="1" 
-                                placeholder="feature-1" 
-                                required>
-                            <label for="item-name">item-description</label>
-                            <textarea name="item-description" id="item-1-descrition" title="Item description" cols="30" rows="5"
-                                tabindex="41" minlength="1" placeholder="feature-1-description" required></textarea>
-                        </div>
-                        <!-- END OF ITEM -->
-                        <!-- ITEM -->
-                        <div class="item input-div">
-                            <label for="item-name">item-name</label>
-                            <input 
-                            name="item-2"
-                            id="item-2" 
-                            title="Item-2" 
-                            class="item-name" 
-                            type="text" 
-                            tabindex="41"
-                            minlength="1" 
-                            placeholder="feature-2" 
-                            required>
-                            <label for="item-name">item-description</label>
-                            <textarea 
-                            name="item-2-description" 
-                            class="item-description" 
-                            id="item-2-description" 
-                            title="Item description" 
-                            cols="30" rows="5"
-                            tabindex="42" 
-                            minlength="1" 
-                            placeholder="feature-2-description" required></textarea>
-                        </div>
-                        <!-- END OF ITEM -->
-                        <!-- ITEM -->
-                        <div class="item input-div">
-                            <label for="item-3">item-name</label>
-                            <input 
-                            name="item-3"
-                            id="item-3" 
-                            title="Item name" 
-                            class="item-name" 
-                            type="text" 
-                            tabindex="43"
-                            minlength="1" 
-                            placeholder="feature-name" 
-                            required>
-                            <label for="item-name">item-description</label>
-                            <textarea name="item-3-description" id="item-3" title="Item description" cols="30" rows="5"
-                                tabindex="44" minlength="1" placeholder="feature-3-description" required></textarea>
-                        </div>
-                        <!-- END OF ITEM -->
-                </section>
-                <!-- END OF CURRICULUM -->
-
-            </fieldset>
-            <!-- END OF WEBPAGE DETAILS -->
+           
             <!-- ABOUT -->
             <div class="input-div">
                 <label for="name">about: </label>
@@ -250,5 +263,6 @@
     </footer>
     <!-- JAVASCRIPT -->
     <script src="js/app.js"></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
