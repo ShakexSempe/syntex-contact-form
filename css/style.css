@@ -233,6 +233,29 @@ form {
       form #submit-btn:focus::after {
         opacity: 1; }
 
+#features {
+  border: 1px solid red;
+  padding: 0; }
+  #features .feature-items {
+    border: 1px solid blue;
+    padding: .5em; }
+    #features .feature-items .feature-control {
+      border: 1px solid yellow;
+      padding: .5em 0; }
+      #features .feature-items .feature-control .feature-content {
+        border: 1px solid pink;
+        display: flex;
+        flex-direction: column; }
+        #features .feature-items .feature-control .feature-content input {
+          width: 50%;
+          padding: .5em;
+          margin: .5em 0; }
+        #features .feature-items .feature-control .feature-content textarea {
+          padding: .5em; }
+  #features .feature-container {
+    border: 1px solid green;
+    padding: 1em 0; }
+
 * {
   margin: 0;
   padding: 0;
