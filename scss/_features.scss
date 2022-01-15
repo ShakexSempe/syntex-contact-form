@@ -1,26 +1,47 @@
 #features {
-    border: 1px solid red;
-    padding: 0;
+    overflow: hidden;
+    p {
+        text-align: center;
+        margin: .5em auto;
+    }
+    // border: 1px solid red;
+    padding: .5em;
     .feature-items {
-        border: 1px solid blue;
-        padding: .5em;
+        // border: 1px solid blue;
+        padding: 0;
 
         .feature-control {
-            border: 1px solid yellow;
+            // border: 1px solid yellow;
             padding: .5em 0;
             .feature-content {
-                border: 1px solid pink;
+                // border: 1px solid pink;
                 display: flex;
                 flex-direction: column;
                 input {
                     width: 50%;
                     padding: .5em;
                     margin: .5em 0;
+                    border: 2px solid#000;
+                    border-radius: 5px;
                 }
 
                 textarea {
-                    padding: .5em;
+                    background-color: $overlay-blue-light;
                 }
+            }
+        }
+
+        button {
+            border-radius: 20px;
+            padding: .5em 1em;
+            cursor: cell;
+            text-transform: capitalize;
+            &.submit-btn {
+                background-color: $text-brand;
+            }
+            &.clear-btn {
+                background-color: #ac0929;
+                color: $text-light;
             }
         }
     }

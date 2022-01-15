@@ -147,7 +147,7 @@ form {
       text-transform: capitalize;
       transition: .2s;
       font-weight: 600; }
-    form .input-div input {
+    form .input-div input, form .input-div textarea {
       outline: 2px solid #ead2a1;
       outline-offset: -3px;
       padding: 1em .5em;
@@ -157,16 +157,16 @@ form {
       border-radius: 5px;
       border: none;
       font-size: 1.1em; }
-      form .input-div input:focus {
+      form .input-div input:focus, form .input-div textarea:focus {
         color: #ead2a1;
         background-color: #333;
         border: none;
         letter-spacing: .1em;
         outline: 2px dashed #ead2a1;
         outline-offset: -3px; }
-        form .input-div input:focus::placeholder {
+        form .input-div input:focus::placeholder, form .input-div textarea:focus::placeholder {
           color: #ead2a1; }
-      form .input-div input:invalid {
+      form .input-div input:invalid, form .input-div textarea:invalid {
         background-color: #333a;
         border: none;
         outline: 2px dashed #ead2a1;
@@ -234,24 +234,36 @@ form {
         opacity: 1; }
 
 #features {
-  border: 1px solid red;
-  padding: 0; }
+  overflow: hidden;
+  padding: .5em; }
+  #features p {
+    text-align: center;
+    margin: .5em auto; }
   #features .feature-items {
-    border: 1px solid blue;
-    padding: .5em; }
+    padding: 0; }
     #features .feature-items .feature-control {
-      border: 1px solid yellow;
       padding: .5em 0; }
       #features .feature-items .feature-control .feature-content {
-        border: 1px solid pink;
         display: flex;
         flex-direction: column; }
         #features .feature-items .feature-control .feature-content input {
           width: 50%;
           padding: .5em;
-          margin: .5em 0; }
+          margin: .5em 0;
+          border: 2px solid #000;
+          border-radius: 5px; }
         #features .feature-items .feature-control .feature-content textarea {
-          padding: .5em; }
+          background-color: #485563; }
+    #features .feature-items button {
+      border-radius: 20px;
+      padding: .5em 1em;
+      cursor: cell;
+      text-transform: capitalize; }
+      #features .feature-items button.submit-btn {
+        background-color: #ead2a1; }
+      #features .feature-items button.clear-btn {
+        background-color: #ac0929;
+        color: #f4f4f4; }
   #features .feature-container {
     border: 1px solid green;
     padding: 1em 0; }

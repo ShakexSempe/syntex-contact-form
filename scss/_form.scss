@@ -201,7 +201,7 @@ form {
             font-weight: 600;
         }
 
-        input {
+        input, textarea {
             outline: 2px solid $text-brand;
             outline-offset: -3px;
             padding: 1em .5em;

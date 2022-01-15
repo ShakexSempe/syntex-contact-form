@@ -42,7 +42,6 @@ const addItem = (e) => {
             title="Item 1" 
             class="item-name" 
             type="text" 
-            tabindex="40"
             minlength="1" 
             value="${nameValue}"
             placeholder="${nameValue}" 
@@ -50,7 +49,7 @@ const addItem = (e) => {
 
         <label for="item-name">Description</label>
         <textarea name="item-description" id="item-1-description" title="Item description" cols="30" rows="5"
-            tabindex="41" 
+            
             minlength="1" 
             value="${descValue}"
             placeholder="${descValue}" 
