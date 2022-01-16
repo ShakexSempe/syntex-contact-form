@@ -70,12 +70,16 @@
             text-align: center;
             outline: none;
             margin-bottom: 5vh;
+            text-transform: capitalize;
             background: $overlay;
             box-shadow: inset 2px 2px 2px #fffa,
                         inset -2px -2px 2px #000a,
                         3px 3px 3px #000a;
         }
-
+        .item-description {
+            background-color: $overlay-blue-light;
+            color: #ddd;
+        }
         .feature-list {
             .input-div {
                 margin-bottom: 2em;

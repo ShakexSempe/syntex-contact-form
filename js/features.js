@@ -48,14 +48,19 @@ const addItem = (e) => {
             required>
 
         <label for="feature-name">Description</label>
-        <textarea name="feature-description" id="item-1-description" title="Item description" cols="30" rows="5"
-            
+        <textarea 
+            name="feature-description" 
+            id="item-1-description" 
+            title="Item description" 
+            cols="30" rows="5"
+            class="item-description"
             minlength="1" 
             value="${descValue}"
             placeholder="describe ${nameValue}"  
             required>${descValue}</textarea>`;
 
         list.appendChild(element);
+        alert(`"${nameValue}" added as feature`);
     }
 }
 
