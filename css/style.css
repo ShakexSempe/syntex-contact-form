@@ -176,7 +176,6 @@ form {
       form .input-div textarea:invalid {
         background-color: #f4f4f4; }
     form .input-div ::placeholder {
-      text-transform: capitalize;
       color: #a3a3a3; }
     form .input-div.services input {
       margin: .5em 0; }
@@ -252,7 +251,8 @@ form {
           border: 2px solid #000;
           border-radius: 5px; }
         #features .feature-items .feature-control .feature-content textarea {
-          background-color: #485563; }
+          background-color: #485563;
+          width: 100%; }
     #features .feature-items button {
       border-radius: 20px;
       padding: .5em 1em;
