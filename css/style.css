@@ -234,14 +234,12 @@ form {
 
 #features {
   width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 0 .2em; }
+  padding: 0; }
   #features p {
     text-align: center;
-    margin: .5em auto; }
+    margin: 5vh auto 1em; }
   #features .feature-items {
-    padding: 0; }
+    padding: .5em; }
     #features .feature-items .feature-control {
       padding: .5em 0; }
       #features .feature-items .feature-control .feature-content {
@@ -415,7 +413,7 @@ body {
   margin: 5vh 0;
   width: 100%;
   overflow-x: hidden;
-  padding: 1em 0;
+  padding: .5em;
   position: relative;
   transition: .5s; }
   @media (min-width: 768px) {
@@ -438,19 +436,19 @@ body {
       z-index: 5; } }
   #container header {
     text-align: center;
-    margin: 1em auto;
+    margin: 10vh auto;
     min-height: 100vh; }
     #container header h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       color: #29323c; }
     #container header h2 {
-      font-size: 1.5em;
+      font-size: 2em;
       color: #ffff;
       margin: .5em auto;
       text-shadow: 1px 1px 1px #29323c, 0 0 5px #ead2a1, 0 0 20px #000a; }
     #container header p {
       font-size: 1em;
-      margin: .5em auto; }
+      margin: 5vh auto 1em; }
       #container header p a {
         color: #000;
         transition: .2s; }
@@ -458,7 +456,7 @@ body {
           color: #000a;
           text-decoration: none; }
     #container header figure {
-      width: 80%;
+      width: 50%;
       overflow: hidden;
       margin: 10vh auto 5vh;
       border-radius: 35px;

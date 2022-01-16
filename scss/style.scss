@@ -193,7 +193,7 @@ body {
     margin: 5vh 0;
     width: 100%;
     overflow-x: hidden;
-    padding: 1em 0;
+    padding: .5em;
     position: relative;
     transition: .5s;
     // background dim when nav open
@@ -222,14 +222,14 @@ body {
 
     header {
         text-align: center;
-        margin: 1em auto;
+        margin: 10vh auto;
         min-height: 100vh;;
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             color: $overlay-blue-dark;
         }
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
             color: #ffff;
             margin: .5em auto;
             text-shadow: 1px 1px 1px $overlay-blue-dark, 
@@ -238,7 +238,7 @@ body {
         }
         p {
             font-size: 1em;
-            margin: .5em auto;
+            margin: 5vh auto 1em;
 
             a {
                 color: $text-dark;
@@ -251,7 +251,7 @@ body {
         }
 
         figure {
-            width: 80%;
+            width: 50%;
             overflow: hidden;
             margin: 10vh auto 5vh;
             border-radius: 35px;

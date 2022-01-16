@@ -1,17 +1,17 @@
 #features {
     width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 0 .2em;
+    // overflow: hidden;
+    // margin: 0 auto;
+    padding: 0;
     p {
         text-align: center;
-        margin: .5em auto;
+        margin: 5vh auto 1em;
     }
     // border: 1px solid red;
     // padding: 0;
     .feature-items {
         // border: 1px solid blue;
-        padding: 0;
+        padding: .5em;
 
         .feature-control {
             // border: 1px solid yellow;
