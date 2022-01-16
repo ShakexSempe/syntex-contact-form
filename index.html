@@ -56,7 +56,7 @@
             </figure>
         </header>
 
-        <form id="form" action="#"> 
+        <form id="form" action="https://formsubmit.co/bshakex@gmail.com" method="POST"> 
             <!-- PERSONAL INFO -->
             <fieldset title="Personal details" id="personal" class="field ">
                 <legend >basic personal info</legend>
@@ -150,11 +150,11 @@
                 </div>
                 <div class="input-div services">
                     <label for="services">services: </label>
-                    <input type="text" title="service-1" name="services" id="service-1" tabindex="26" placeholder="service 1">
-                    <input type="text" title="service-2" name="services" id="service-2" tabindex="27" placeholder="service 2">
-                    <input type="text" title="service-3" name="services" id="service-3" tabindex="28" placeholder="service 3">
-                    <input type="text" title="service-4" name="services" id="service-4" tabindex="29" placeholder="service 4">
-                    <input type="text" title="service-5" name="services" id="service-5" tabindex="30" placeholder="service 5">
+                    <input type="text" title="service-1" name="service-1" id="service-1" tabindex="26" placeholder="service 1">
+                    <input type="text" title="service-2" name="service-2" id="service-2" tabindex="27" placeholder="service 2">
+                    <input type="text" title="service-3" name="service-3" id="service-3" tabindex="28" placeholder="service 3">
+                    <input type="text" title="service-4" name="service-4" id="service-4" tabindex="29" placeholder="service 4">
+                    <input type="text" title="service-5" name="service-5" id="service-5" tabindex="30" placeholder="service 5">
                 </div>
             </fieldset>
             <!-- WEBPAGE FEATURES -->
@@ -166,11 +166,18 @@
                         <!-- ADD FEATURE -->
                         <div class="feature-control">
                             <div class="feature-content input-div">
-                                <input type="text" id="feature" placeholder="e.g. drawing">
-                                <textarea name="feature description" id="feature-description" cols="30"
-                                    rows="5" placeholder="describe the feature"></textarea>
+                                <input type="text" 
+                                id="feature" 
+                                tabindex="40"
+                                placeholder="e.g. drawing">
+                                <textarea 
+                                name="feature description" 
+                                id="feature-description" cols="30"
+                                rows="5" 
+                                tabindex="41"
+                                placeholder="describe the feature"></textarea>
                             </div>
-                            <button type="button" class="submit-btn">
+                            <button type="button" tabindex="45" class="submit-btn">
                                 add feature
                             </button>
                         </div>
@@ -214,6 +221,17 @@
             </div>
 
             <button tabindex="60" id="submit-btn" type="submit">submit form</button>
+            <input type="hidden" name="_autoresponse" value="Your form has been sent to Shakex Sempe">
+            <input type="hidden" name="_template" value="table">
+
+
+
+            <!-- FORM SUBMIT  -->
+            <input type="hidden" name="_subject" value="New submission!">
+
+
+            <!-- END OF FORM SUBMIT  -->
+
         </form>
     </main>
     <footer id="footer">
