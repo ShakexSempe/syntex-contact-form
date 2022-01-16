@@ -14,7 +14,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     font-size: 16px;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     font-family: $font-sans;
     position: relative;
 }
@@ -24,7 +24,7 @@ body {
     top: 0;
     height: 5vh;
     background-color: $overlay-blue-dark;
-    width: 100%;
+    width: 100vw;
     padding: 1.5em 1em;
     display: flex;
     justify-content: space-between;

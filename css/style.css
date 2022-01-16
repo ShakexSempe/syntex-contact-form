@@ -271,9 +271,19 @@ form {
     background: #ead2a1;
     padding: .5em;
     margin: 5vh 0;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow: hidden; }
     #features .feature-container input, #features .feature-container textarea {
       width: 100%; }
+    #features .feature-container .item-name {
+      border-radius: 20px;
+      text-align: center;
+      outline: none;
+      margin-bottom: 5vh;
+      background: linear-gradient(60deg, #20262e, #485563);
+      box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px #000a; }
+    #features .feature-container .feature-list .input-div {
+      margin-bottom: 2em; }
 
 * {
   margin: 0;
@@ -286,6 +296,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-size: 16px;
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   position: relative; }
 
@@ -295,7 +306,7 @@ body {
   top: 0;
   height: 5vh;
   background-color: #29323c;
-  width: 100%;
+  width: 100vw;
   padding: 1.5em 1em;
   display: flex;
   justify-content: space-between;

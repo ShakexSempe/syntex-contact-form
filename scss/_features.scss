@@ -59,9 +59,27 @@
         padding:.5em;
         margin: 5vh 0;
         border-radius: 5px;
+        overflow: hidden;
 
         input, textarea {
             width: 100%;
+        }
+
+        .item-name {
+            border-radius: 20px;
+            text-align: center;
+            outline: none;
+            margin-bottom: 5vh;
+            background: $overlay;
+            box-shadow: inset 2px 2px 2px #fffa,
+                        inset -2px -2px 2px #000a,
+                        3px 3px 3px #000a;
+        }
+
+        .feature-list {
+            .input-div {
+                margin-bottom: 2em;
+            }
         }
     }
 }
