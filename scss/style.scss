@@ -123,6 +123,7 @@ body {
             
             li {
                 margin-bottom: 2em;
+                // border: 1px solid red;
 
                 a {
                     display: block;
@@ -130,6 +131,13 @@ body {
                     text-transform: capitalize;
                     color: #f4f4f4;
                     width: 100%;
+                    // border: 1px solid red;
+                    margin-right: auto;
+
+                    i {
+                        // border: 1px solid yellow;
+                        margin-right: .5em;
+                    }
                 }
             }
         }

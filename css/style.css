@@ -409,7 +409,10 @@ body {
           text-decoration: none;
           text-transform: capitalize;
           color: #f4f4f4;
-          width: 100%; }
+          width: 100%;
+          margin-right: auto; }
+          #nav .nav-list ul li a i {
+            margin-right: .5em; }
     @media (max-width: 768px) {
       #nav .nav-list.active {
         right: -5vw; }
