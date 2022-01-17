@@ -64,12 +64,15 @@ const addItem = (e) => {
         alert(`"${nameValue}" added as feature`);
         // BUTTON EVENT LISTENERS
         const deleteBtn = element.querySelector('.delete-btn');
-        console.log(deleteBtn);
-        deleteBtn.addEventListener("click", () => deleteItem);
+        console.log(attribute.value);
+        deleteBtn.addEventListener("click",  deleteItem);
     }
 }
 
 // add item
 submitBtn.addEventListener('click' , addItem);
 // deleteItem
-
+deleteItem = (e) => {
+    const element =  e.currentTarget.parentElement;
+    list.removeChild(element);
+}
