@@ -66,8 +66,7 @@
             border-radius: 20px;
             text-align: center;
             outline: none;
-            margin-bottom: 5vh;
-            margin: 1em auto;
+            margin: 0 auto 1em;
             width: 50%;
             text-transform: capitalize;
             background: $overlay;
@@ -91,6 +90,26 @@
         .feature-list {
             .input-div {
                 margin-bottom: 2em;
+
+                .delete-btn {
+                    // border: 2px solid red;
+                    width: 2em;
+                    height: 2em;
+                    display: grid;
+                    place-items: center;
+                    padding: .1em;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transform: translateY(50%);
+                    background-color: #000;
+                    color: #f4f4f4;
+                    box-shadow: inset 2px 2px 3px #fffa,
+                                2px 2px 3px rgba(0, 0, 0, 0.388);
+
+                    &:active {
+                        transform: translateY(50%) scale(.9);
+                    }
+                }
             }
         }
     }

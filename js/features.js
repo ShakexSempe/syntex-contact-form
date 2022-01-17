@@ -36,7 +36,7 @@ const addItem = (e) => {
         element.setAttributeNode(attribute);
 
         element.innerHTML = `<label for="feature">feature</label>
-        
+        <div class="delete-btn"><i title="delete feature" class="fas fa-trash-alt"></i></div>
         <input 
             name="feature"
             id="item" 
