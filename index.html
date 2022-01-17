@@ -35,9 +35,10 @@
         <nav>
             <div class="nav-list">
                 <ul class="nav-item">
-                    <li><a title="Personal info section" href="#personal">personal</a></li>
-                    <li><a title="webpage info section" href="#webpage">webpage</a></li>
-                    <li><a title="features info section" href="#features">features</a></li>
+                    <li><a class="nav-link" title="Personal info section" href="#personal">personal</a></li>
+                    <li><a class="nav-link" title="webpage info section" href="#webpage">webpage</a></li>
+                    <li><a class="nav-link" title="features info section" href="#features">features</a></li>
+                    <li><a class="nav-link" title="features info section" href="#about">about</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,58 +58,6 @@
         </header> -->
 
         <form id="form" action="https://formsubmit.co/bshakex@gmail.com" method="POST"> 
-            <!-- WEBPAGE FEATURES -->
-            <fieldset title="features items" id="features" class="field features">
-                <legend title="Webpage details">Webpage features</legend>
-                <!-- CURRICULUM -->
-                <section class="feature-items">
-                        <p>Add a feature title and provide a description of the feature in the text area below</p>
-                        <!-- ADD FEATURE -->
-                        <div class="feature-control">
-                            <div class="feature-content input-div">
-                                <input type="text" 
-                                id="feature" 
-                                tabindex="40"
-                                placeholder="e.g. drawing">
-                                <textarea 
-                                name="feature description" 
-                                id="feature-description" cols="30"
-                                rows="5" 
-                                tabindex="41"
-                                placeholder="describe the feature"></textarea>
-                            </div>
-                            <button type="button" tabindex="45" class="submit-btn">
-                                add feature
-                            </button>
-                        </div>
-                        <div class="feature-container">
-                            <div class="feature-list">
-                                <!-- ITEM -->
-                                <!-- <article class="item input-div">
-                            <label for="item-1">item-name</label>
-                            <input 
-                                name="item-1"
-                                id="item-1" 
-                                title="Item 1" 
-                                class="item-name" 
-                                type="text" 
-                                tabindex="40"
-                                minlength="1" 
-                                placeholder="feature-1" 
-                                required>
-                            <label for="item-name">item-description</label>
-                            <textarea name="item-description" id="item-1-descrition" title="Item description" cols="30" rows="5"
-                                tabindex="41" minlength="1" placeholder="feature-1-description" required></textarea>
-                        </article> -->
-                                <!-- END OF ITEM -->
-                            </div>
-                            <button type="button" class="clear-btn" >clear items</button>
-                        </div>
-                </section>
-                <!-- END OF CURRICULUM -->
-            </fieldset>
-            <!-- END OF WEBPAGE FEATURES -->
-            
             <!-- PERSONAL INFO -->
             <fieldset title="Personal details" id="personal" class="field ">
                 <legend >basic personal info</legend>
@@ -209,15 +158,65 @@
                     <input type="text" title="service-5" name="service-5" id="service-5" tabindex="30" placeholder="service 5">
                 </div>
             </fieldset>
-            
+             <!-- WEBPAGE FEATURES -->
+             <fieldset title="features items" id="features" class="field features">
+                <legend title="Webpage details">Webpage features</legend>
+                <!-- CURRICULUM -->
+                <section class="feature-items">
+                        <p>Add a feature title and provide a description of the feature in the text area below</p>
+                        <!-- ADD FEATURE -->
+                        <div class="feature-control">
+                            <div class="feature-content input-div">
+                                <input type="text" 
+                                id="feature" 
+                                tabindex="40"
+                                placeholder="e.g. drawing">
+                                <textarea 
+                                name="feature description" 
+                                id="feature-description" cols="30"
+                                rows="5" 
+                                tabindex="41"
+                                placeholder="describe the feature"></textarea>
+                            </div>
+                            <button type="button" tabindex="45" class="submit-btn">
+                                add feature
+                            </button>
+                        </div>
+                        <div class="feature-container">
+                            <div class="feature-list">
+                                <!-- ITEM -->
+                                <!-- <article class="item input-div">
+                            <label for="item-1">item-name</label>
+                            <input 
+                                name="item-1"
+                                id="item-1" 
+                                title="Item 1" 
+                                class="item-name" 
+                                type="text" 
+                                tabindex="40"
+                                minlength="1" 
+                                placeholder="feature-1" 
+                                required>
+                            <label for="item-name">item-description</label>
+                            <textarea name="item-description" id="item-1-descrition" title="Item description" cols="30" rows="5"
+                                tabindex="41" minlength="1" placeholder="feature-1-description" required></textarea>
+                        </article> -->
+                                <!-- END OF ITEM -->
+                            </div>
+                            <button type="button" class="clear-btn" >clear items</button>
+                        </div>
+                </section>
+                <!-- END OF CURRICULUM -->
+            </fieldset>
+            <!-- END OF WEBPAGE FEATURES -->
             <!-- ABOUT -->
-            <div class="input-div">
+            <div id="about" class="input-div">
                 <label for="name">about: </label>
                 <textarea name="about" title="about your website" 
                 col="10" 
                 rows="10" 
-                minlength="5" 
-                placeholder="provide details about your website and services to users and clients respectively"
+                minlength="2" 
+                placeholder="details about your website and services"
                 tabindex="50"
                 required></textarea>
             </div>

@@ -301,8 +301,13 @@ body {
     }
     }
 
- 
-
+    #about {
+        textarea {
+            &:focus {
+                background: $overlay-blue-light;
+            }
+        }
+    }
 }
 footer {
     width: 100%;
