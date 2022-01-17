@@ -59,11 +59,17 @@ const addItem = (e) => {
             value="${descValue}"
             placeholder="describe ${nameValue}"  
             required>${descValue}</textarea>`;
-
+        
         list.appendChild(element);
         alert(`"${nameValue}" added as feature`);
+        // BUTTON EVENT LISTENERS
+        const deleteBtn = element.querySelector('.delete-btn');
+        console.log(deleteBtn);
+        deleteBtn.addEventListener("click", () => deleteItem);
     }
 }
 
-// deleteItem
+// add item
 submitBtn.addEventListener('click' , addItem);
+// deleteItem
+
