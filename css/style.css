@@ -258,13 +258,16 @@ form {
       padding: .5em 1em;
       margin: 0 .5em;
       cursor: cell;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      transition: .2s; }
       #features .feature-items button.submit-btn {
         background: linear-gradient(60deg, #20262e, #485563);
         color: #f4f4f4; }
       #features .feature-items button.clear-btn {
         background: linear-gradient(60deg, #960d28, #ac0929);
         color: #f4f4f4; }
+      #features .feature-items button:active {
+        transform: scale(0.9); }
   #features .feature-container {
     border: none;
     outline: none;

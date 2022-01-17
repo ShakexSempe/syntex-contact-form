@@ -41,6 +41,7 @@
             margin: 0 .5em;
             cursor: cell;
             text-transform: capitalize;
+            transition: .2s;
             &.submit-btn {
                 background: $overlay;
                 color: $text-light;
@@ -48,6 +49,10 @@
             &.clear-btn {
                 background: $background-crimson;
                 color: $text-light;
+            }
+
+            &:active {
+                transform: scale(.9);
             }
         }
     }

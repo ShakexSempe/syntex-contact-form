@@ -75,4 +75,5 @@ submitBtn.addEventListener('click' , addItem);
 deleteItem = (e) => {
     const element =  e.currentTarget.parentElement;
     list.removeChild(element);
+    alert("feature deleted from list");
 }
