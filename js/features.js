@@ -36,6 +36,7 @@ const addItem = (e) => {
         element.setAttributeNode(attribute);
 
         element.innerHTML = `<label for="feature">feature</label>
+        
         <input 
             name="feature"
             id="item" 
@@ -64,4 +65,5 @@ const addItem = (e) => {
     }
 }
 
+// deleteItem
 submitBtn.addEventListener('click' , addItem);

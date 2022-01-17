@@ -273,19 +273,23 @@ form {
     margin: 5vh 0;
     border-radius: 5px;
     overflow: hidden; }
-    #features .feature-container input, #features .feature-container textarea {
-      width: 100%; }
     #features .feature-container .item-name {
       border-radius: 20px;
       text-align: center;
       outline: none;
       margin-bottom: 5vh;
+      margin: 1em auto;
+      width: 50%;
       text-transform: capitalize;
       background: linear-gradient(60deg, #20262e, #485563);
       box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px #000a; }
     #features .feature-container .item-description {
       background-color: #485563;
-      color: #ddd; }
+      color: #ddd;
+      width: 100%;
+      box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px #000a;
+      outline: none;
+      border: none; }
     #features .feature-container .feature-list .input-div {
       margin-bottom: 2em; }
 
