@@ -1,6 +1,6 @@
 // VARIABLES
 const navList = document.querySelector('.nav-list');
-const container = document.getElementById("container");
+const body = document.getElementById("container");
 const date = document.getElementById("date");
 const toggle = document.getElementById("toggle");
 const navItem = document.querySelectorAll(".nav-link");
@@ -15,7 +15,7 @@ toggle.addEventListener("click", () => {
 
     navList.classList.toggle("active");
     toggle.classList.toggle("active");
-    container.classList.toggle("dim");
+    body.classList.toggle("dim");
 });
 
 // nav items 
@@ -23,7 +23,7 @@ navItem.forEach(item => {
     item.addEventListener("click", () => {
         navList.classList.toggle("active");
         toggle.classList.toggle("active");
-        container.classList.toggle("dim");
+        body.classList.toggle("dim");
 
     })
 });
