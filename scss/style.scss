@@ -124,6 +124,8 @@ body {
             li {
                 margin-bottom: 2em;
                 // border: 1px solid red;
+                display: flex;
+                padding: .5em 0;
 
                 a {
                     display: block;
@@ -131,13 +133,17 @@ body {
                     text-transform: capitalize;
                     color: #f4f4f4;
                     width: 100%;
-                    // border: 1px solid red;
-                    margin-right: auto;
-
-                    i {
-                        // border: 1px solid yellow;
-                        margin-right: .5em;
-                    }
+                    // border: 1px solid green;
+                    // margin-right: auto;
+                }
+                i {
+                    // border: 1px solid yellow;
+                    // margin-right: .5em;
+                    flex-basis: 5%;
+                    display: grid;
+                    place-items: center;
+                    color: $text-brand;
+                    margin-right: .2em;
                 }
             }
         }
@@ -146,14 +152,26 @@ body {
         @media (max-width: 768px){
         &.active {
             right: -5vw;
+
             ul {
                 border: 1px solid $text-brand;
-            width: 95%;
-            padding: 1em .5em;
-            display: flex;
-            flex-direction: column;
-            align-items: right;
-            justify-content: center;
+                width: 95%;
+                padding: 1em .5em;
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+                justify-content: center;
+
+                li {
+                    background: $overlay-blue-dark;
+                    padding: auto;
+
+                    i {
+                        margin: 0 ;
+                        flex-basis: 15%;
+                        // border: 1px solid red;
+                    }
+                }
             }
         }
     }
@@ -175,14 +193,25 @@ body {
             flex-direction: row;
             li {
                 margin: 0 .5em 0 2em;
+                padding: .5em 1em;
                 a {
-                    color: $text-brand;
+                    color: $text-light;
                     cursor: pointer;
                     display: block;
+                }
+                
+                i {
+                    color: $text-brand;
+                    padding-right: .3em;
+
                 }
                 &:hover {
                     a {
                         color: $text-brand-hover;
+                    }
+
+                    i {
+                        color: $text-light;
                     }
                 }
             }

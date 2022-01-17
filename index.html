@@ -35,10 +35,10 @@
         <nav>
             <div class="nav-list">
                 <ul class="nav-item">
-                    <li><a class="nav-link" title="Personal info section" href="#personal"><i class="fas fa-user"></i>personal</a></li>
-                    <li><a class="nav-link" title="webpage info section" href="#webpage"><i class="fas fa-chalkboard-teacher"></i></i>webpage</a></li>
-                    <li><a class="nav-link" title="features info section" href="#features"><i class="fas fa-user-cog"></i>features</a></li>
-                    <li><a class="nav-link" title="features info section" href="#about"><i class="fas fa-address-card"></i>about</a></li>
+                    <li><i class="fas fa-user"></i><a class="nav-link" title="Personal info section" href="#personal">personal</a></li>
+                    <li><i class="fas fa-chalkboard-teacher"></i><a class="nav-link" title="webpage info section" href="#webpage">webpage</a></li>
+                    <li><i class="fas fa-user-cog"></i><a class="nav-link" title="features info section" href="#features">features</a></li>
+                    <li><i class="fas fa-address-card"></i><a class="nav-link" title="features info section" href="#about">about</a></li>
                 </ul>
             </div>
         </nav>
@@ -167,10 +167,14 @@
                         <!-- ADD FEATURE -->
                         <div class="feature-control">
                             <div class="feature-content input-div">
+                                <label for="feature">feature name</label>
                                 <input type="text" 
                                 id="feature" 
                                 tabindex="40"
                                 placeholder="e.g. drawing">
+                            </div>
+                            <div class="feature-content input-div">
+                                <label for="feature-description">feature description</label>
                                 <textarea 
                                 name="feature description" 
                                 id="feature-description" cols="30"
@@ -178,7 +182,7 @@
                                 tabindex="41"
                                 placeholder="describe the feature"></textarea>
                             </div>
-                            <button type="button" tabindex="45" class="submit-btn">
+                                <button type="button" tabindex="45" class="submit-btn">
                                 add feature
                             </button>
                         </div>

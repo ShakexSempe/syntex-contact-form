@@ -7,6 +7,7 @@ form {
       width: 90%;
       margin: 5vh auto; } }
   form fieldset {
+    min-height: 100vh;
     margin: 5vh auto;
     background-color: #f4f4f4;
     padding: 1.3em .5em;
@@ -19,7 +20,8 @@ form {
     @media (min-width: 768px) {
       form fieldset {
         padding: 1.5em .5em;
-        border-radius: 5px; } }
+        border-radius: 5px;
+        min-height: auto; } }
     form fieldset.open {
       background: #fff000; }
     form fieldset .field-btn {
@@ -403,16 +405,21 @@ body {
     #nav .nav-list ul {
       list-style: none; }
       #nav .nav-list ul li {
-        margin-bottom: 2em; }
+        margin-bottom: 2em;
+        display: flex;
+        padding: .5em 0; }
         #nav .nav-list ul li a {
           display: block;
           text-decoration: none;
           text-transform: capitalize;
           color: #f4f4f4;
-          width: 100%;
-          margin-right: auto; }
-          #nav .nav-list ul li a i {
-            margin-right: .5em; }
+          width: 100%; }
+        #nav .nav-list ul li i {
+          flex-basis: 5%;
+          display: grid;
+          place-items: center;
+          color: #ead2a1;
+          margin-right: .2em; }
     @media (max-width: 768px) {
       #nav .nav-list.active {
         right: -5vw; }
@@ -423,7 +430,13 @@ body {
           display: flex;
           flex-direction: column;
           align-items: right;
-          justify-content: center; } }
+          justify-content: center; }
+          #nav .nav-list.active ul li {
+            background: #29323c;
+            padding: auto; }
+            #nav .nav-list.active ul li i {
+              margin: 0;
+              flex-basis: 15%; } }
     @media (min-width: 768px) {
       #nav .nav-list {
         position: relative;
@@ -439,13 +452,19 @@ body {
           display: flex;
           flex-direction: row; }
           #nav .nav-list ul li {
-            margin: 0 .5em 0 2em; }
+            margin: 0 .5em 0 2em;
+            padding: .5em 1em; }
             #nav .nav-list ul li a {
-              color: #ead2a1;
+              color: #f4f4f4;
               cursor: pointer;
               display: block; }
+            #nav .nav-list ul li i {
+              color: #ead2a1;
+              padding-right: .3em; }
             #nav .nav-list ul li:hover a {
-              color: #f3e5c9; } }
+              color: #f3e5c9; }
+            #nav .nav-list ul li:hover i {
+              color: #f4f4f4; } }
 
 #container {
   margin: 5vh 0;
