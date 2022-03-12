@@ -201,6 +201,11 @@ form {
             text-transform: capitalize;
             transition: .2s;
             font-weight: 600;
+
+            span {
+                color: #000a;
+                text-transform: lowercase;
+            }
         }
 
         input, textarea {
@@ -219,9 +224,7 @@ form {
                 color: $text-brand;
                 background-color: #333;
                 border: none;
-                letter-spacing: .1em;
                 outline: 2px dashed $text-brand;
-                outline-offset: -3px;
                 &::placeholder {
                     color: $text-brand;
                 }
@@ -231,7 +234,6 @@ form {
                 background-color: #333a;
                 border: none;
                 outline: 2px dashed $text-brand;
-                outline-offset: -1px;
             } 
         }
 

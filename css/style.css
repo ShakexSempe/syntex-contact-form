@@ -148,6 +148,9 @@ form {
       text-transform: capitalize;
       transition: .2s;
       font-weight: 600; }
+      form .input-div label span {
+        color: #000a;
+        text-transform: lowercase; }
     form .input-div input, form .input-div textarea {
       outline: 2px solid #ead2a1;
       outline-offset: -3px;
@@ -162,16 +165,13 @@ form {
         color: #ead2a1;
         background-color: #333;
         border: none;
-        letter-spacing: .1em;
-        outline: 2px dashed #ead2a1;
-        outline-offset: -3px; }
+        outline: 2px dashed #ead2a1; }
         form .input-div input:focus::placeholder, form .input-div textarea:focus::placeholder {
           color: #ead2a1; }
       form .input-div input:invalid, form .input-div textarea:invalid {
         background-color: #333a;
         border: none;
-        outline: 2px dashed #ead2a1;
-        outline-offset: -1px; }
+        outline: 2px dashed #ead2a1; }
     form .input-div textarea {
       padding: .5em;
       font-size: 1.2em; }
@@ -340,12 +340,16 @@ body {
   @media (min-width: 768px) {
     #nav {
       padding: 1.5em 10vw; } }
-  #nav .brand h1 a {
-    font-size: .9em;
-    text-decoration: none;
-    color: #ead2a1;
-    text-transform: capitalize;
-    cursor: pointer; }
+  #nav .brand {
+    width: 10rem;
+    overflow: none;
+    position: relative; }
+    #nav .brand a {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      #nav .brand a img {
+        width: 100%; }
   #nav .nav-toggle {
     border: 1px solid #ead2a1;
     padding: .5em;
@@ -492,19 +496,17 @@ body {
       opacity: .5;
       z-index: 5; } }
   #container header {
-    text-align: center;
     margin: 10vh auto;
-    min-height: 100vh; }
+    text-align: center; }
     #container header h1 {
-      font-size: 3em;
-      color: #29323c; }
-    #container header h2 {
+      text-transform: capitalize;
       font-size: 2em;
       color: #ffff;
       margin: .5em auto;
-      text-shadow: 1px 1px 1px #29323c, 0 0 5px #ead2a1, 0 0 20px #000a; }
+      text-shadow: 1px 1px 1px #29323c, 0 0 5px #ead2a1, 0 0 10px #000a; }
     #container header p {
       font-size: 1em;
+      font-weight: 500;
       margin: 5vh auto 1em; }
       #container header p a {
         color: #000;
@@ -528,15 +530,10 @@ body {
         transform: scale(0.8); }
     @media (min-width: 768px) {
       #container header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0; }
+        margin: 5vh auto; }
         #container header .title {
           margin: 0 5vw; }
           #container header .title h1 {
-            font-size: 3.5em; }
-          #container header .title h2 {
             font-size: 2em; }
           #container header .title p {
             font-size: 1.3em; }
